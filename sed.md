@@ -9,3 +9,6 @@ Syntax:
 
 * `echo "Bash Scripting Language" | sed 's/Bash/Perl/'` 
 	* Basic text substitution, changes Bash to Perl.
+* `sed '2 s/Python/perl/g' python.txt` - everything on second line will be changed from Python to perl.
+	* ‘g’ option is used in `sed` command to replace all occurrences of matching pattern. 
+	* 2 is a line that takes effect on.
