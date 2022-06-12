@@ -1,7 +1,7 @@
 * Log into local & remote graphical and text mode consoles [100]
 * Search for files [Find](/find.md) [100]
 * Evaluate and compare the basic file system features and options [FS](/file_system.md) [70 - needs mounting info]
-* Compare and manipulate file content [Diff](/diff.md) [100]
+* <s>Compare and manipulate file content</s> [Diff](/diff.md) [100]
 * Use input-output redirection (e.g . >, >>, |, 2>) [100]
 * Analyze text using basic regular expressions
 * Archive, backup, compress, unpack, and uncompress files
