@@ -26,7 +26,7 @@
 * `-ne` - not equal
 
 
-# STRINGS
+### STRINGS
 
 * `str1 == str2` - str1 matches str2
 * `str1 != str2` - str1 does not match str2
