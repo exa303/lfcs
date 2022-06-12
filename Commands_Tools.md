@@ -1,5 +1,11 @@
 # Find
 
+### -exec
+* `find /path [args] -exec [cmd] {} \`;
+* `{}` Is a placeholder for the result found by find.
+* `\;` Says that for each found result, the command cmd is executed once with the found result.
+* It is executed like this: cmd result1 result2 … result N.
+
 * `find . `  - . represents working dir.
 * `find . -name test.txt` - finds test.txt
 * `find . -type d -name Documents` -  find directorie/s Documents in this working directory.
@@ -10,11 +16,6 @@
 * `find / -perm /g=s` - Find all SGID set files.
 * `find . -type f -perm /a=x` - Find all executable files (/a=x  / need to use this to escape bash interpretation).
 * `find / -type f -perm 0777 -print -exec chmod 644 {} \;` - chmod to 0644 DON'T FORGET ` \;` with space before it.
-### -exec
-* `find /path [args] -exec [cmd] {} \`;
-* `{}` Is a placeholder for the result found by find.
-* `\;` Says that for each found result, the command cmd is executed once with the found result.
-* It is executed like this: cmd result1 result2 … result N.
 * `find . -type f -perm /a=x -exec rm -f {} \;` - find executable and remove it.
 * `find . -type f -name "*.txt" -exec rm -f {} \;` - find and remove multiple files.
 * `find . -type f -empty` - find empty files.
