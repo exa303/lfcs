@@ -14,4 +14,4 @@ Syntax:
 	* 2 is a line that takes effect on.
 * `2 s/Python/perl/2' python.txt` - second line, second word Python will change to perl.
 * `sed -e '$s/Python/perl/g' text.txt` - last line on a file will get all Python words replaced to perl. `$` by s is expression to the last.
-
+* `sed -n '3,3p' text.txt` - print 3 line of a text.txt file. `sed -n '$p' text.txt` - same result  
