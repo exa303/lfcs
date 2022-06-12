@@ -2,17 +2,17 @@
 * Search for files [Find](/find.md) [100]
 * Evaluate and compare the basic file system features and options [FS](/file_system.md) [70 - needs mounting info]
 * Compare and manipulate file content [Diff](/diff.md) [100]
-* Use input-output redirection (e.g. >, >>, |, 2>)
+* Use input-output redirection (e.g . >, >>, |, 2>) [100]
 * Analyze text using basic regular expressions
 * Archive, backup, compress, unpack, and uncompress files
-* Create, delete, copy, and move files and directories
-* Create and manage hard and soft links
+* Create, delete, copy, and move files and directories [100]
+* Create and manage hard and soft links 
 * List, set, and change standard file permissions
-* Read, and use system documentation
+* Read, and use system documentation [100]
 * Manage access to the root account
 
-* Boot, reboot, and shut down a system safely
-* Boot or change system into different operating modes
+* Boot, reboot, and shut down a system safely [100]
+* Boot or change system into different operating modes 
 * Install, configure and troubleshoot bootloaders
 * Diagnose and manage processes
 * Locate and analyze system log files
