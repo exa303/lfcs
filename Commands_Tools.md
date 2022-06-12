@@ -37,6 +37,7 @@ It is executed like this: cmd result1 result2 … result N.
 * `find / -size 50M` - To find all 50MB files, use.
 * `find / -size +50M -size -100M` - To find all the files which are greater than 50MB and less than 100MB.
 * `find . -type f -size +1G -exec du -hs {} \;` - find files bigger then 1G and show theyr actual size for each of them.
-
+* `find / -type f -name ‘howtouselinux*’ -exec mv {} {}_renamed \;` rename all files.
+* `find ./ -type f -exec bash -c ‘ls -lrt {}’ \;` - combine find exec with shell script function.
 
 
