@@ -6,8 +6,33 @@
 
 # Main file systems:
 ## Tmpfs
-*tmpfs is a temporary file system for Linux systems. Basically mounted as a disk based system, it resides in the RAM or the volatile memory.
+Tmpfs is a temporary file system for Linux systems. Basically mounted as a disk based system, it resides in the RAM or the volatile memory.
 All contents within the tmpfs are temporary. At the time of a reboot or a power outage, all contents are lost.
+
+## Xfs
+Additionally, there is another journled file system called the xfs.
+It is a very consistent file system In terms of data and improves overall system performance. Xfs is best suited for real-time apps. IT maintains a very good Input/Output bandwidth. It excels at parallel I/O
+
+Today, most of the Red Hat Enterprise Linux are supported by xfs.
+
+## btrfs
+Btrf is considered as a copy-on write file system. This file system has unique features since it is written for fault tolerance, easy repair and good administration. Thus btrfs is aimed at implementing advanced features on Linux.
+
+openSUSE is setup using Btrfs alongw with a snapshot for the root partition. Snapshots are elements that let you easily rollback system to a previous point if any update fails or any changes to backup files is needed.
+
+## ext
+Was added to Linux kernel in 2008. It is a stopgap technology extending it ancestor ext 3.
+
+Ext 4 is backward compatible as much as possible with ext 3. It allows ext 3 to be upgraded to ext 4. Further, it removes the need to maintain two codebases at the same time.
+
+—–Large file systems: ext 4 was introduced to manage large file system by using 48-bit  internal addressing. Red Hat Enterprise Linux supports ext 4 file systems upto 50 TiB.
+
+Allocating Improvements: it introduces various ways how storage blocks are effectively allocated before they are written to the disk. This way, the read and write performance is improved significantly.
+
+Delayed allocation: Linux commits things into disk and stores them effectively. Thus, with delayed allocation, the ext 4 waits to allocate actual blocks until it’s ready to commit.
+
+* `TBA MOUNTING PROCESS`
+
 
 ### Ref.
 * [How to evaluate and compare the basic file system features and options]("https://thegcpgurus.com/how-to-evaluate-and-compare-the-basic-file-system-features-and-options/")	
