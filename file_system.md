@@ -35,4 +35,4 @@ Delayed allocation: Linux commits things into disk and stores them effectively. 
 
 
 ### Ref.
-* [How to evaluate and compare the basic file system features and options]("https://thegcpgurus.com/how-to-evaluate-and-compare-the-basic-file-system-features-and-options/")	
+[How to evaluate and compare the basic file system features and options](https://thegcpgurus.com/how-to-evaluate-and-compare-the-basic-file-system-features-and-options/)	
