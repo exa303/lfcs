@@ -10,7 +10,7 @@
 * `find / -perm /g=s` - Find all SGID set files.
 * `find . -type f -perm /a=x` - Find all executable files (/a=x  / need to use this to escape)
 * `find / -type f -perm 0777 -print -exec chmod 644 {} \;` - chmod to 0644 DON'T FORGET `\;`
-## -exec
+### -exec
 * `find /path [args] -exec [cmd] {} \`;
 * `{}` Is a placeholder for the result found by find
 * `\;` Says that for each found result, the command cmd is executed once with the found result.
