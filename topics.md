@@ -1,17 +1,17 @@
-* Log into local & remote graphical and text mode consoles [100]
-* Search for files [Find](/find.md) [100]
-* Evaluate and compare the basic file system features and options [FS](/file_system.md) [70 - needs mounting info]
-* <s>Compare and manipulate file content</s> [Diff](/diff.md) [100]
-* Use input-output redirection (e.g . >, >>, |, 2>) [100]
+* <s>Log into local & remote graphical and text mode consoles</s> 
+* <s>Search for files</s> [Find](/find.md)
+* Evaluate and compare the basic file system features and options [FS](/file_system.md) [70% - needs mounting info]
+* <s>Compare and manipulate file content</s> [Diff](/diff.md)
+* <s>Use input-output redirection (e.g . >, >>, |, 2>)</s> 
 * Analyze text using basic regular expressions
 * Archive, backup, compress, unpack, and uncompress files
-* Create, delete, copy, and move files and directories [100]
+* <s>Create, delete, copy, and move files and directories</s>
 * Create and manage hard and soft links 
 * List, set, and change standard file permissions
-* Read, and use system documentation [100]
+* <s>Read, and use system documentation</s>
 * Manage access to the root account
 
-* Boot, reboot, and shut down a system safely [100]
+* <s>Boot, reboot, and shut down a system safely</s>
 * Boot or change system into different operating modes 
 * Install, configure and troubleshoot bootloaders
 * Diagnose and manage processes
