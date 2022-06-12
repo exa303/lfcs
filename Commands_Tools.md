@@ -1,4 +1,4 @@
 # Find
 
-* `find . ` - . represents working dir.
+* `find . `  - . represents working dir.
 
