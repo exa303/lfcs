@@ -1,10 +1,11 @@
 # Find
 
 ### -exec
-* `find /path [args] -exec [cmd] {} \`;
-* `{}` Is a placeholder for the result found by find.
-* `\;` Says that for each found result, the command cmd is executed once with the found result.
-* It is executed like this: cmd result1 result2 … result N.
+`find /path [args] -exec [cmd] {} \`;
+`{}` Is a placeholder for the result found by find.
+`\;` Says that for each found result, the command cmd is executed once with the found result.
+It is executed like this: cmd result1 result2 … result N.
+###
 
 * `find . `  - . represents working dir.
 * `find . -name test.txt` - finds test.txt
