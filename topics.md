@@ -1,7 +1,7 @@
-* Log into local & remote graphical and text mode consoles
+* Log into local & remote graphical and text mode consoles [100]
 * Search for files [Find](/find.md) [100]
 * Evaluate and compare the basic file system features and options
-* Compare and manipulate file content
+* Compare and manipulate file content [Diff](/diff.md) [100]
 * Use input-output redirection (e.g. >, >>, |, 2>)
 * Analyze text using basic regular expressions
 * Archive, backup, compress, unpack, and uncompress files
