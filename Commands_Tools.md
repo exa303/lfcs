@@ -5,7 +5,7 @@
 `{}` Is a placeholder for the result found by find.
 `\;` Says that for each found result, the command cmd is executed once with the found result.
 It is executed like this: cmd result1 result2 … result N.
-<br>
+<br />
 
 * `find . `  - . represents working dir.
 * `find . -name test.txt` - finds test.txt
