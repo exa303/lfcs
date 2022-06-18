@@ -7,10 +7,10 @@
 * Analyze text using basic regular expressions
 * <s>Archive, backup, compress, unpack, and uncompress files)</s> [Here](/compress_backup.md)
 * <s>Create, delete, copy, and move files and directories</s>
-* Create and manage hard and soft links 
-* List, set, and change standard file permissions + SUID, SGID, STICKY BIT [Here](/file_perrmissions.md)
+* <s>Create and manage hard and soft links</s>
+* <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
 * <s>Read, and use system documentation</s>
-* Manage access to the root account
+* <s>Manage access to the root account</s> [Here](/root_access)
 
 * <s>Boot, reboot, and shut down a system safely</s>
 * Boot or change system into different operating modes 

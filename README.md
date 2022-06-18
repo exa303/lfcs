@@ -4,6 +4,6 @@ Notes are related to all of the topics to egzam and study program that is publis
 START by klicking on [topics.md](/topics.md)
 
 ---
-### Additional Notes
+### Additional Notes 
 
 [Bash Scripting](/bash_scripting.md)
