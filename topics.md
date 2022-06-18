@@ -10,7 +10,7 @@
 * <s>Create and manage hard and soft links</s>
 * <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
 * <s>Read, and use system documentation</s>
-* <s>Manage access to the root account</s> [Here](/root_access.md)
+* <s>Manage access to the root account/specific privileges to users and groups</s> [Here](/root_access.md)
 
 * <s>Boot, reboot, and shut down a system safely</s>
 * Boot or change system into different operating modes 

@@ -17,7 +17,8 @@ your_user ALL=(ALL:ALL) ALL  //<---
 * Here, "root ALL=(ALL:ALL) ALL" states that the user root, logged in to any hostname, may run, as any user or group, any command. The general form of this directive is:
 	* `user hostname=(runas-user:runas-group) command`
 
----
+### Grant specific priveleges to specific users
+
 * Example 1 - User hope, when logged in to host myhost, may run the command mysqldump as user mysqluser or a member of group mysqlusers. For example, this directive would allow user hope to run this command:
 
 	* `hope myhost=(mysqluser:mysqlusers) mysqldump`
