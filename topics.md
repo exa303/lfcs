@@ -8,7 +8,7 @@
 * <s>Archive, backup, compress, unpack, and uncompress files)</s> [Here](/compress_backup.md)
 * <s>Create, delete, copy, and move files and directories</s>
 * Create and manage hard and soft links 
-* List, set, and change standard file permissions [Here](/file_perrmissions.md)
+* List, set, and change standard file permissions + SUID, SGID, STICKY BIT [Here](/file_perrmissions.md)
 * <s>Read, and use system documentation</s>
 * Manage access to the root account
 
