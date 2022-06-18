@@ -3,6 +3,13 @@
 	* This file is read by mount command on Unix machines. And this process happens at the boot time. Only superusers can mount filesystems.
 * `df -T` - shows file system names
 * `df -H` - shows in human readable format
+* To find the device and filesystem type, you can use any of the following commands:
+```bash
+   lsblk -l 
+   ls -l /dev/disk/by-id/usb*
+   dmesg
+
+```
 
 # Main file systems:
 ## Tmpfs
