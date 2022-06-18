@@ -11,7 +11,7 @@ x (execute) = 1
 
 Each set of 3 spaces equates to a different permission set. For instance:
 ```
-d 			rwx 				rwx 				rwx
+d			rwx					rwx					rwx
 file type 	user permissions 	group permissions 	other permissions
 ```
 
