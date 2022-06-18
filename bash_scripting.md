@@ -38,9 +38,11 @@
 * `-z str1` - str1 is null (has length 0)
 
 ### USER INPUT
-     
-* ```read -p "please enter your name: " name<br/>
-   echo $name```
+
+---     
+
+* `read -p "please enter your name: " name
+   echo $name`
 	* -p prior
 
 ### OTHER:
