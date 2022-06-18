@@ -32,7 +32,7 @@
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * Manage template user environment
-* <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **NEED TO LABS**
+* <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **TBC**
 * Manage user privileges
 * 
 * Configure networking and hostname resolution statically or dynamically
