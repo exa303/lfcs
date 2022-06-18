@@ -43,5 +43,19 @@
    echo $name`
 	* -p prior
 
+### FLAGS with GETOPTS
+```bash
+#!/bin/bash
+while getopts "n:x" opts; do
+
+        case $opts in
+                n) name=$OPTARG ;;
+                x) echo "the x has been selected";;
+        esac
+done
+
+echo "hello $name"
+```
+
 ### OTHER:
 * `command && command && command` - Using & (ampersand) to run commands simultaneously
