@@ -51,6 +51,12 @@ Delayed allocation: Linux commits things into disk and stores them effectively. 
 * If the file system is in use the umount command will fail to detach the file system. In those situations, you can use the fuser command to find out which processes are accessing the file system:
 	* `fuser -m DIRECTORY`
 
+* Lazy unmount  -Use the -l (--lazy) option to unmount a busy file system as soon as it is not busy anymore:
+	* `umount -l DIRECTORY`
+* Force unmount:
+	* `umount -f DIRECTORY`
+
+
 
 ### Ref.
 [How to evaluate and compare the basic file system features and options](https://thegcpgurus.com/how-to-evaluate-and-compare-the-basic-file-system-features-and-options/)	
