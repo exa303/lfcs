@@ -11,7 +11,7 @@
 * <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
 * <s>Read, and use system documentation</s>
 * <s>Manage access to the root account/specific privileges to users and groups</s> [Here](/root_access.md)
-
+---
 * <s>Boot, reboot, and shut down a system safely</s>
 * Boot or change system into different operating modes 
 * Install, configure and troubleshoot bootloaders
@@ -27,21 +27,21 @@
 * Manage the startup process and services (In Services Configuration)
 * List and identify SELinux/AppArmor file and process contexts
 * Identify the component of a Linux distribution that a file belongs to 
-
+---
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * Manage template user environment
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **TBC**
 * Manage user privileges
-
+---
 * Configure networking and hostname resolution statically or dynamically
 * Configure network services to start automatically at boot
 * Implement packet filtering
 * Start, stop, and check the status of network services
 * Statically route IP traffic
 * Synchronize time using other network peers 
-
+---
 * Configure a caching DNS server
 * Maintain a DNS zone
 * Configure email aliases
@@ -55,7 +55,7 @@
 * Restrict access to a web page
 * Manage and configure containers
 * Manage and configure Virtual Machines 
-
+---
 * List, create, delete, and modify physical storage partitions
 * Manage and configure LVM storage
 * Create and configure encrypted storage
@@ -66,4 +66,4 @@
 * Create, manage and diagnose advanced file system permissions
 * Setup user and group disk quotas for filesystems
 * Create and configure file systems 
-
+---
