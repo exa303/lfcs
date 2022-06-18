@@ -35,3 +35,6 @@ The “.bashrc” file is a script executed whenever you initialize an interacti
 * `HISTSIZE` : number of lines of history allowed in memory;
 * `UID` : the current UID for the user
 
+# Set PATH environment variable on Linux
+
+`echo "export PATH='$PATH:/<path_to_executable>'" >> ~/.bashrc && source ~/.bashrc` 
