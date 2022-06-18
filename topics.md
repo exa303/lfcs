@@ -31,9 +31,9 @@
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
-* Manage template user environment
+* Manage template user environment **TBC**
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **TBC**
-* Manage user privileges
+* <s>Manage user privileges</s> **Privileges != permissions ?**
 ---
 * Configure networking and hostname resolution statically or dynamically
 * Configure network services to start automatically at boot
