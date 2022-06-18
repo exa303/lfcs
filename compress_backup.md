@@ -20,12 +20,14 @@ Tar is commonly used to backup or compress files. It is also used to transfer fi
 
 `-z flag` = This is a flag that is used to filter the archive through gzip in linux
 
+### Commands
+
 * `less tarfile.tar` - Check the contents of tarfile.
 
 * `tar -cvf <archive_name.tar> <file_name_which_you_wish_to_compress_or_a_dir>`  - tar file.
 * `tar -xvf <archive_name.tar>` - untar file.
 * `tar -xvf <archive_name.tar> -C /some/location` - untar file to a specific location.
-* `tar -xvf mybackup.tar.gz   mybackup.xml` - untar single file  from tar.gz File.
+* `tar -xvf mybackup.tar.gz   /destination/to/that/file/mybackup.xml` - untar single file  from tar.gz File.
 * `tar -xvf file.tar etc` - untar single directory form file
 
 ### Using the gzip method
