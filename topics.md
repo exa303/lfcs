@@ -1,11 +1,11 @@
 
 * <s>Log into local & remote graphical and text mode consoles</s> 
 * <s>Search for files</s> [Find](/find.md)
-* Evaluate and compare the basic file system features and options [FS](/file_system.md) [70% - needs mounting info]
+* <s>Evaluate and compare the basic file system features and options [FS](/file_system.md)</s>
 * <s>Compare and manipulate file content</s> [Diff](/diff.md)
 * <s>Use input-output redirection (e.g . >, >>, |, 2>)</s> 
 * Analyze text using basic regular expressions
-* Archive, backup, compress, unpack, and uncompress files
+* Archive, backup, compress, unpack, and uncompress files)[Here](/compress_backup.md)
 * <s>Create, delete, copy, and move files and directories</s>
 * Create and manage hard and soft links 
 * List, set, and change standard file permissions
