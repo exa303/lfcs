@@ -1,3 +1,4 @@
+
 * <s>Log into local & remote graphical and text mode consoles</s> 
 * <s>Search for files</s> [Find](/find.md)
 * Evaluate and compare the basic file system features and options [FS](/file_system.md) [70% - needs mounting info]
