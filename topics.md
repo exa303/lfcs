@@ -28,9 +28,9 @@
 * List and identify SELinux/AppArmor file and process contexts
 * Identify the component of a Linux distribution that a file belongs to 
 
-* * Create, delete, and modify local user accounts
-* Create, delete, and modify local groups and group memberships
-* Manage system-wide environment profiles
+* <s>Create, delete, and modify local user accounts</s>
+* <s>Create, delete, and modify local groups and group memberships</s>
+* Manage system-wide environment profiles [Here](/env_profiles.md)
 * Manage template user environment
 * Configure user resource limits
 * Manage user privileges
