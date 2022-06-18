@@ -1,6 +1,6 @@
-# configure user resource limits and restrictions in Linux
+# Configure user resource limits and restrictions in Linux
 
-* On the command line, we changed from where we were into `/etc/security` and we then listed all the content in that directory as shown above. The particular file that we are interested in is `limits.conf` So the next thing to do is to use a text editor like vim or even nano so go into the configuration file `limits.conf` and make any changes that we want.
+On the command line, we changed from where we were into `/etc/security` and we then listed all the content in that directory as shown above. The particular file that we are interested in is `limits.conf` So the next thing to do is to use a text editor like vim or even nano so go into the configuration file `limits.conf` and make any changes that we want.
 
 The configuration file on its own holds a lot of valuable information that can guide us through. The format it follows is `<domain> <type> <item> <value>`.
 
