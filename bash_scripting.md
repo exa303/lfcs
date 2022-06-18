@@ -42,3 +42,6 @@
 * `read -p "please enter your name: " name
    echo $name`
 	* -p prior
+
+### OTHER:
+* `command && command && command` - Using & (ampersand) to run commands simultaneously
