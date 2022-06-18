@@ -7,3 +7,7 @@ START by klicking on [topics.md](/topics.md)
 ### Additional Notes 
 
 [Bash Scripting](/bash_scripting.md)
+
+
+### References
+[techmint.com/lfca](https://www.tecmint.com/category/lfca/page/2/)
