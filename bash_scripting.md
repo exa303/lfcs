@@ -36,3 +36,9 @@
 * `str1 \< str2` - str1 is sorted before str2
 * `-n str1` - str1 is not null (has length greater than 0)
 * `-z str1` - str1 is null (has length 0)
+
+### USER INPUT
+     
+* `read -p "please enter your name: " name
+   echo $name`
+	* -p prior
