@@ -34,7 +34,7 @@
 * Manage template user environment
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **TBC**
 * Manage user privileges
-* 
+
 * Configure networking and hostname resolution statically or dynamically
 * Configure network services to start automatically at boot
 * Implement packet filtering
