@@ -38,7 +38,18 @@ Allocating Improvements: it introduces various ways how storage blocks are effec
 
 Delayed allocation: Linux commits things into disk and stores them effectively. Thus, with delayed allocation, the ext 4 waits to allocate actual blocks until it’s ready to commit.
 
-* `TBA MOUNTING PROCESS`
+---
+
+## MOUNT
+* Assuming that the USB drive uses the /dev/sdd1 device you can mount it to /media/usb directory by typing:
+	* `sudo mount /dev/sdd1 /media/usb`
+
+## UMOUNT
+* umount DIRECTORY
+* umount DEVICE_NAME
+
+* If the file system is in use the umount command will fail to detach the file system. In those situations, you can use the fuser command to find out which processes are accessing the file system:
+	* `fuser -m DIRECTORY`
 
 
 ### Ref.
