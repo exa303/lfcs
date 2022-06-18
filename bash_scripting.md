@@ -39,7 +39,7 @@
 
 ### USER INPUT
      
-* `read -p "please enter your name: " name <br />
+* `read -p "please enter your name: " name<br/>
    echo $name`
 	* -p prior
 
