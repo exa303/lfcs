@@ -8,3 +8,34 @@ A domain can be a user or group let us assume that we have a group called @techd
 
 `Hard` limit means that the limit will be enforced.
 A `soft` limit is the type of limit that is not enforced immediately and sends a warning to the user before continuing the next line of action.
+
+If a hard limit or soft limit of a resource is set to a valid value, but outside of the supported range of the local system, the system may reject the new limit or unexpected behavior may occur. If the control value required is used, the module will reject the login if a limit could not be set.
+
+In general, individual limits have priority over group limits, so if you impose no limits for admin group, but one of the members in this group have a limits line, the user will have its limits set according to this line.
+
+Also, please note that all limit settings are set per login. They are not global, nor are they permanent; existing only for the duration of the session.
+
+In the limits configuration file, the '#' character introduces a comment - after which the rest of the line is ignored.
+
+The pam_limits module does report configuration problems found in its configuration file and errors via syslog
+
+### Settings
+* `core` - limits the core file size (KB) 
+* `data` - maximum data size (KB) 
+* `fsize` - maximum filesize (KB) 
+* `memlock` - maximum locked-in-memory address space (KB) 
+* `nofile` - maximum number of open files 
+* `rss` - maximum resident set size (KB) (Ignored in Linux 2.4.30 and higher) 
+* `stack` - maximum stack size (KB) 
+* `cpu` - maximum CPU time (minutes) 
+* `nproc` - maximum number of processes 
+* `as` - address space limit (KB) 
+* `maxlogins` - maximum number of logins for this user except for this with uid=0 
+* `maxsyslogins` - maximum number of all logins on system 
+* `priority` - the priority to run user process with (negative values boost process priority) 
+* `locks` - maximum locked files (Linux 2.4 and higher) 
+* `sigpending` - maximum number of pending signals (Linux 2.6 and higher) 
+* `msgqueue` - maximum memory used by POSIX message queues (bytes) (Linux 2.6 and higher) 
+* `nice` - maximum nice priority allowed to raise to (Linux 2.6.12 and higher) values: [-20,19] 
+* `rtprio ` - maximum realtime priority allowed for non-privileged processes (Linux 2.6.12 and higher) 
+All items support the values -1, unlimited or infinity indicating no limit, except for priority and nice. 
