@@ -30,9 +30,9 @@
 
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
-* Manage system-wide environment profiles [Here](/env_profiles.md)
+* <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * Manage template user environment
-* Configure user resource limits
+* Configure user resource limits [Here](/usr_resource_limits.md)
 * Manage user privileges
 * 
 * Configure networking and hostname resolution statically or dynamically
