@@ -58,4 +58,18 @@ echo "hello $name"
 ```
 
 ### OTHER:
+
 * `command && command && command` - Using & (ampersand) to run commands simultaneously
+
+* `$$` - is the process ID (PID) of the script itself. $BASHPID is the process ID of the current instance of Bash.
+
+* `trap <function name / "or entire command"> <SIGNAL>` - trap execution of a function name or entire command until the SIGNAL is received.
+        * `trap -l` - lists all possible signals. In bash scripts you can use `EXIT` signal to trap execution until script exits. It is similar to `defer` in golang.
+
+* `seq 1 10` - start step stop , it can be used in bash scripting in for loop for example:
+        ```bash
+        for a in `seq 1 10`; do
+                echo $a
+        done
+
+        ```
