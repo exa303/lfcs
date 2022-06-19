@@ -67,9 +67,10 @@ echo "hello $name"
         * `trap -l` - lists all possible signals. In bash scripts you can use `EXIT` signal to trap execution until script exits. It is similar to `defer` in golang.
 
 * `seq 1 10` - start step stop , it can be used in bash scripting in for loop for example:
-        ```bash
+        
+```bash
         for a in `seq 1 10`; do
                 echo $a
         done
 
-        ```
+```
