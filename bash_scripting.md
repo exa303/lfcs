@@ -74,3 +74,5 @@ echo "hello $name"
         done
 
 ```
+
+* ` ${#array[@]}` - find out total number of elements in array.
