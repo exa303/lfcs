@@ -59,7 +59,7 @@ echo "hello $name"
 
 ### OTHER:
 
-* `command && command && command` - Using & (ampersand) to run commands simultaneously
+* `command && command && command` - Using one & (ampersand) to run commands simultaneously
 
 * `$$` - is the process ID (PID) of the script itself. $BASHPID is the process ID of the current instance of Bash.
 
