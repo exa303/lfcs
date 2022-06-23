@@ -13,9 +13,9 @@
 * <s>Manage access to the root account/specific privileges to users and groups</s> [Here](/root_access.md)
 ---
 * <s>Boot, reboot, and shut down a system safely</s>
-* Boot or change system into different operating modes 
+* <s>Boot or change system into different operating modes</s> [RUNLEVEL](/run_levels.md) **TBC**
 * Install, configure and troubleshoot bootloaders
-* Diagnose and manage processes
+* Diagnose and manage processes [Processes]
 * Locate and analyze system log files
 * Schedule tasks to run at a set date and time
 * Verify completion of scheduled jobs
@@ -32,7 +32,7 @@
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * Manage template user environment [Read](/template_usr_env.md) **TBC**
-* <s>Configure user resource limits</s> [Here](/usr_resource_limits.md) **TBC**
+* <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
 * <s>Manage user privileges</s> **Privileges != permissions ?**
 ---
 * Configure networking and hostname resolution statically or dynamically
