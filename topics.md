@@ -15,7 +15,7 @@
 * <s>Boot, reboot, and shut down a system safely</s>
 * <s>Boot or change system into different operating modes</s> [RUNLEVEL](/run_levels.md) **TBC**
 * Install, configure and troubleshoot bootloaders
-* Diagnose and manage processes [Processes]
+* Diagnose and manage processes [Processes](/processes.md)
 * Locate and analyze system log files
 * Schedule tasks to run at a set date and time
 * Verify completion of scheduled jobs
