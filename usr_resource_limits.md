@@ -52,7 +52,9 @@ All items support the values -1, unlimited or infinity indicating no limit, exce
  	* `DefaultLimitNOFILE=65535`
 
 * Modify /etc/security/limits.conf with the following lines (this takes care of non-GUI login):
- 	*  ```mkasberg hard nofile 65535
- 	   	  mkasberg soft nofile 65535```
+ 	```bash  
+ 	mkasberg hard nofile 65535
+ 	mkasberg soft nofile 65535
+ 	```
 
 * Reboot your computer for changes to take effect.
