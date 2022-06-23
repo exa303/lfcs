@@ -1,6 +1,8 @@
 ### Kill
 
-```pidof firefox.exe
+```
+pidof firefox.exe
 1123
 kill 1123
+
 ```
