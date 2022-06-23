@@ -44,3 +44,15 @@ All items support the values -1, unlimited or infinity indicating no limit, exce
 * `ulimit -a` - shows all summary of preset limits
 * `ulimit -n` - shows all possible open files
 * `ulimit -Hn` - shows open files HARD limit. `ulimit -Sn` - shows open files SOFT limit.
+
+---
+
+ If you want to increase the limit shown by ulimit -n, you should:
+* Modify /etc/systemd/user.conf and /etc/systemd/system.conf with the following line (this takes care of graphical login):
+ 	* `DefaultLimitNOFILE=65535`
+
+* Modify /etc/security/limits.conf with the following lines (this takes care of non-GUI login):
+ 	*  ```mkasberg hard nofile 65535
+ 	   	  mkasberg soft nofile 65535```
+
+* Reboot your computer for changes to take effect.
