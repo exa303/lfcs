@@ -58,3 +58,10 @@ All items support the values -1, unlimited or infinity indicating no limit, exce
  	```
 
 * Reboot your computer for changes to take effect.
+
+
+* In some cases you may need to modify PAM files (Pluggable Authentication Modules).
+add this line to `/etc/pam.d/common-session` and `/etc/pam.d/common-session-noninteractive`:
+
+	* `session required pam_limits.so`
+
