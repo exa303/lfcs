@@ -48,13 +48,13 @@ All items support the values -1, unlimited or infinity indicating no limit, exce
 ---
 
  If you want to increase the limit shown by ulimit -n, you should:
-* Modify /etc/systemd/user.conf and /etc/systemd/system.conf with the following line (this takes care of graphical login):
+* Modify `/etc/systemd/user.conf` and `/etc/systemd/system.conf` with the following line (this takes care of graphical login):
  	* `DefaultLimitNOFILE=65535`
 
 * Modify /etc/security/limits.conf with the following lines (this takes care of non-GUI login):
  	```bash  
- 	mkasberg hard nofile 65535
- 	mkasberg soft nofile 65535
+ 	<username> hard nofile 65535
+ 	<username> soft nofile 65535
  	```
 
 * Reboot your computer for changes to take effect.
