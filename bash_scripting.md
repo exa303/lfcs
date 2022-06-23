@@ -59,7 +59,7 @@ echo "hello $name"
 
 ### OTHER:
 
-* `command && command && command` - Using & (ampersand) to run commands simultaneously
+* `command && command && command` - Using one & (ampersand) to run commands simultaneously
 
 * `$$` - is the process ID (PID) of the script itself. $BASHPID is the process ID of the current instance of Bash.
 
@@ -74,10 +74,12 @@ echo "hello $name"
         done
 
 ```
-
+ 
+* ` ${#array[@]}` - find out total number of elements in array.
 * `wait` - useful command when waiting for multiple processes to finish. 
 
 ### Arithmetic expressions
 
 * `myvar=3 && echo $myvar && echo $((myvar++))` - Increments
 * `a=5 && b=5 && echo $((a * b))` - result is 25
+
