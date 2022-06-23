@@ -39,3 +39,8 @@ The pam_limits module does report configuration problems found in its configurat
 * `nice` - maximum nice priority allowed to raise to (Linux 2.6.12 and higher) values: [-20,19] 
 * `rtprio ` - maximum realtime priority allowed for non-privileged processes (Linux 2.6.12 and higher) 
 All items support the values -1, unlimited or infinity indicating no limit, except for priority and nice. 
+
+###
+* `ulimit -a` - shows all summary of preset limits
+* `ulimit -n` - shows all possible open files
+* `ulimit -Hn` - shows open files HARD limit. `ulimit -Sn` - shows open files SOFT limit.

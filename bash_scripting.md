@@ -74,3 +74,10 @@ echo "hello $name"
         done
 
 ```
+
+* `wait` - useful command when waiting for multiple processes to finish. 
+
+### Arithmetic expressions
+
+* `myvar=3 && echo $myvar && echo $((myvar++))` - Increments
+* `a=5 && b=5 && echo $((a * b))` - result is 25
