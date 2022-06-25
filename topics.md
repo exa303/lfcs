@@ -22,7 +22,7 @@
 * Update software to provide required functionality and security
 * Verify the integrity and availability of resources
 * Verify the integrity and availability of key processes
-* Change kernel runtime parameters, persistent and non-persistent
+* Change kernel runtime parameters, persistent and non-persistent [here](/runtime_parameters.md)
 * Use scripting to automate system maintenance tasks
 * Manage the startup process and services (In Services Configuration)
 * List and identify SELinux/AppArmor file and process contexts
