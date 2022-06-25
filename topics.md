@@ -25,13 +25,13 @@
 * <s>Use scripting to automate system maintenance tasks </s> [Here](/scripting_automate_tasks.md)
 * <s>Manage the startup process and services (In Services Configuration)</s> [Here](/systemd.md)
 * List and identify SELinux/AppArmor file and process contexts
-* Identify the component of a Linux distribution that a file belongs to [Here](/identify_which_file_belongs_to.md)
+* <s>Identify the component of a Linux distribution that a file belongs to</s> [Here](/identify_which_file_belongs_to.md) **TBC**
 * Systemd - [here](/systemd.md) **TBC**
 ---
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
-* Manage template user environment [Read](/template_usr_env.md) **TBC**
+* <s>Manage template user environment</s> [Read](/template_usr_env.md) **TBC**
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
 * <s>Manage user privileges</s> **Privileges != permissions ?**
 ---
