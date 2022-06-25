@@ -1,6 +1,6 @@
-### Automating tasks with scripting (short intro)
+# Automating tasks with scripting (short intro)
 
-## Writing a script to display system information
+### Writing a script to display system information
 
 ```bash
 #!/bin/bash
@@ -34,7 +34,7 @@ echo ""
 echo -e "\e[1;32mDone.\e[0m"
 
 ```
-## Automating other tasks
+### Automating other tasks
 
 ```bash
 #!/bin/bash
