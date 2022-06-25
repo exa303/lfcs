@@ -64,6 +64,47 @@ input(type="imfile" File="/var/log/apache2/error.log" Tag="apache-error" Severit
 
 ```
 
+## syslog priorities ( Syslog severity levels )
+
+rsyslog.service is reading journald (which you can display by `journalctl` command), and sorting its output based by setting and priorities found in `/etc/rsyslog.d/50-default.conf` file. Priorities ar categorised just like they are in any programing language or logging library.
+
+```
+Number: 0					
+Severity: EMERGENCY					
+Suggested Actions: A "panic" condition affecting multiple applications, servers, or sites. System is unusable. Notify all technical staff on call.
+
+Number: 1					
+Severity: ALERT					
+Suggested Actions: A condition requiring immediate correction, for example, the loss of a backup ISP connection. Notify staff who can fix the problem.
+
+Number: 2					
+Severity: CRYTICAL					
+Suggested Actions: A condition requiring immediate correction or indicating a failure in a primary system, for example, a loss of a primary ISP connection. Fix CRITICAL issues before ALERT-level problems.
+
+Number: 3					
+Severity: ERROR			
+Suggested Actions: Non-urgent failures. Notify developers or administrators as errors must be resolved within a given time.
+
+Number: 4					
+Severity: WARNING					
+Suggested Actions: Warning messages are not errors, but they indicate that an error will occur if required action is not taken. An example is a file system that is 85% full. Each item must be resolved within a given time.
+
+Number: 5					
+Severity: NOTICE					
+Suggested Actions: Events that are unusual but are not error conditions. These items might be summarized in an email to developers or administrators to spot potential problems. No immediate action is required.
+
+Number: 6					
+Severity: INFORMATIONAL 					
+Suggested Actions: Normal operational messages. These may be harvested for network maintenance functions like reporting and throughput measurement. No action is required.
+
+Number: 7					
+Severity: DEBUG					
+Suggested Actions: Information useful to developers for debugging an application. This information is not useful during operations.
+
+```
+
+
+
 
 ### Which Protocol: UDP, TCP, or RELP?
 
@@ -100,3 +141,4 @@ action.resumeRetryCount="1"	# Keep trying if the target server can’t be contac
 ---
 **Resources:**
 [loggy](https://www.loggly.com/ultimate-guide/managing-linux-logs/)
+[solarwinds](https://documentation.solarwinds.com/en/success_center/orionplatform/content/core-syslog-message-priorities-sw2141.htm)

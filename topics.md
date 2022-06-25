@@ -20,9 +20,9 @@
 * <s>Schedule tasks to run at a set date and time</s> [Cron](/cron.md) 
 * <s>Verify completion of scheduled jobs</s> **"Write a logging utility that tracks events"**
 * Update software to provide required functionality and security
-* Verify the integrity and availability of resources
-* Verify the integrity and availability of key processes
-* Change kernel runtime parameters, persistent and non-persistent [Here](/runtime_parameters.md)
+* Verify the integrity and availability of resources **?**
+* Verify the integrity and availability of key processes **?**
+* <s>Change kernel runtime parameters, persistent and non-persistent</s> [Here](/runtime_parameters.md)
 * Use scripting to automate system maintenance tasks
 * Manage the startup process and services (In Services Configuration)
 * List and identify SELinux/AppArmor file and process contexts
