@@ -103,7 +103,7 @@ Suggested Actions: Information useful to developers for debugging an application
 
 ```
 
-* `cron.*       /var/log/cron.log` : cron - `facility``.``*` - priority(Severity) `/var/log/cron.log` - output directory
+* `cron.*       /var/log/cron.log` : cron - `facility` `.` `*` - priority(Severity) `/var/log/cron.log` - output directory
 
 
 
