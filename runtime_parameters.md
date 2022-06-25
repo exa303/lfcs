@@ -23,9 +23,9 @@ Another method consists of using echo to overwrite the file associated with the 
 
 It is important to note that kernel parameters that are set using sysctl will only be enforced during the current session and will disappear when the system is rebooted.
 
-To set these values permanently, edit /etc/sysctl.conf with the desired values. For example, to disable packet forwarding in /etc/sysctl.conf make sure this line appears in the file:
+To set these values permanently, edit `/etc/sysctl.conf` with the desired values. For example, to disable packet forwarding in `/etc/sysctl.conf` make sure this line appears in the file:
 
-net.ipv4.ip_forward=0
+`net.ipv4.ip_forward=0`
 
 Then run following command to apply the changes to the running configuration.
 
