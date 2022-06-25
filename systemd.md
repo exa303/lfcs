@@ -19,3 +19,4 @@ Systemctl is an extremely powerful Linux utility that comes with systemd. It com
 ---
 
 * `systemd-analyze` - systemd-analyze can provide valuable information about total time taken by the boot process. 
+* `systemd-analyze blame` - it will give detailed time how long it took for a each service to start. This can be a valuable tool to consider if your server is taking a long time to boot and you’re not sure what the cause is.
