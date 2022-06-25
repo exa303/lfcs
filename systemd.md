@@ -1,6 +1,6 @@
 # Systemd 
 
-## Using systemctl
+### Using systemctl
 Systemctl is an extremely powerful Linux utility that comes with systemd. It comes with a long list of options for different functionality, the most common of which are starting, stopping, restarting, or reloading a daemon. In the following examples, we will see how we can use systemctl for some of the troubleshooting purposes.
 
 **Listing Units**
@@ -18,7 +18,7 @@ Systemctl is an extremely powerful Linux utility that comes with systemd. It com
 
 * `systemctl enable specific.service` - this will make specific service start at boot.
 
----
+### Troubleshooting
 
 * `systemd-analyze` - systemd-analyze can provide valuable information about total time taken by the boot process. 
 * `systemd-analyze blame` - it will give detailed time how long it took for a each service to start. This can be a valuable tool to consider if your server is taking a long time to boot and you’re not sure what the cause is.
