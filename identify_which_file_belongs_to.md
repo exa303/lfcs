@@ -3,4 +3,7 @@
 ## Debian and Ubuntu distribution
 
 * First you need to find out the patch to executable. Use `which python`. This will give full path to executable. Use that path to get **package name** with `dpkg -S /usr/bin/python`. 
-Then your can youse package name to look at package dependencies `dpkg -L python3-minimal`
+Then List files installed to your system from package-name. `dpkg -L python3-minimal`
+
+* `dpkg -i <package name>`
+* `dpkg -r <package name>`
