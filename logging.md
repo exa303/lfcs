@@ -41,9 +41,9 @@ $ crontab -e
 
 Centralizing your logs makes searching through log data easier and faster, since all of your logs are accessible in a single location. Instead of guessing which server has the correct file, you can simply access your repository of log data to search for relevant events. Centralization is a key part of large management solutions, as it allows them to analyze, parse, and index logs before storing them in a single location. This makes troubleshooting and solving production issues easier and faster. Centralization also offers these benefits.
 
-    Logs are backed up in a separate location, protecting them against accidental or unintentional loss. This also keeps them accessible in case your servers go down or become unresponsive.
-    You don’t have to use SSH or inefficient grep commands, which can use valuable computing resources for complex searches.
-    You can reduce the amount of disk space used by log files.
-    Engineers can troubleshoot production issues without directly accessing systems.
+*	Logs are backed up in a separate location, protecting them against accidental or unintentional loss. This also keeps them accessible in case your servers go down or become unresponsive.
+*	You don’t have to use SSH or inefficient grep commands, which can use valuable computing resources for complex searches.
+*	You can reduce the amount of disk space used by log files.
+*	Engineers can troubleshoot production issues without directly accessing systems.
 
 While centralized log management is generally the better option, there are still some risks such as poor net connectivity leading to data loss, or logs using a great deal of network bandwidth. We’ll discuss how to intelligently address these issues in the sections below.
