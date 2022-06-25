@@ -36,3 +36,12 @@ Other examples of important kernel runtime parameters are:
 * `fs.file-max` specifies the maximum number of file handles the kernel can allocate for the system. Depending on the intended use of your system (web / database / file server, to name a few examples), you may want to change this value to meet the system’s needs.
 
 Otherwise, you will receive a `“Too many open files”` error message at best, and may prevent the operating system to boot at the worst.
+
+A better and easier way to set individual runtime parameters is using .conf files inside `/etc/sysctl.d`, grouping them by categories.
+
+For example, instead of setting `net.ipv4.ip_forward=0` and `net.ipv4.icmp_echo_ignore_all=1` in /etc/sysctl.conf, we can create a new file named `net.conf` inside `/etc/sysctl.d`:
+```
+# echo "net.ipv4.ip_forward=0" > /etc/sysctl.d/net.conf
+# echo "net.ipv4.icmp_echo_ignore_all=1" >> /etc/sysctl.d/net.conf
+```
+If you choose to use this approach, do not forget to remove those same lines from `/etc/sysctl.conf.`
