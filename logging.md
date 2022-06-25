@@ -103,6 +103,8 @@ Suggested Actions: Information useful to developers for debugging an application
 
 ```
 
+* `cron.*                          /var/log/cron.log` - cron = facility . * =priority(Sverity)
+
 
 
 
