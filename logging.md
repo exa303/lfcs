@@ -21,3 +21,29 @@ Linux has a special directory for storing logs called `/var/log.`
 * Second use awk:
 	* `awk '/.err>/ {print}' /var/log/auth.log`
 
+* get the number of attempted failed logins:
+	* `grep "FAILED su for" /var/log/auth.log | cut -d ' ' -f 9 | sort | uniq -c | sort -nr` - sort, count occurencies with uniq, sort(usualy it sorts from smallest to larges) again reversed.
+
+* memory issues:
+	* `grep "Out of memory" /var/log/syslog`
+
+* The cron daemon is a scheduler that runs commands at specified dates and times. If the process fails to run or fails to finish, then a cron error appears in your log files. You can find these files in `/var/log/cron`, `/var/log/messages`, and `/var/log/syslog`.
+
+*	By default, cron jobs output to syslog and appear in the /var/log/syslog file. You can also redirect the output of your cron commands to another destination, such as standard output or another file. In this example, we pipe “Hello world” to the logger command. This creates two log events: one from cron, and one from the logger command. The -t parameter sets the app name to “helloCron”:
+
+```
+$ crontab -e
+*/5 * * * * echo 'Hello World' 2>&1 | /usr/bin/logger -t helloCron
+
+```
+
+### Managing Linux Logs
+
+Centralizing your logs makes searching through log data easier and faster, since all of your logs are accessible in a single location. Instead of guessing which server has the correct file, you can simply access your repository of log data to search for relevant events. Centralization is a key part of large management solutions, as it allows them to analyze, parse, and index logs before storing them in a single location. This makes troubleshooting and solving production issues easier and faster. Centralization also offers these benefits.
+
+    Logs are backed up in a separate location, protecting them against accidental or unintentional loss. This also keeps them accessible in case your servers go down or become unresponsive.
+    You don’t have to use SSH or inefficient grep commands, which can use valuable computing resources for complex searches.
+    You can reduce the amount of disk space used by log files.
+    Engineers can troubleshoot production issues without directly accessing systems.
+
+While centralized log management is generally the better option, there are still some risks such as poor net connectivity leading to data loss, or logs using a great deal of network bandwidth. We’ll discuss how to intelligently address these issues in the sections below.
