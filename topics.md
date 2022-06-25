@@ -23,7 +23,7 @@
 * Verify the integrity and availability of resources **?**
 * Verify the integrity and availability of key processes **?**
 * <s>Change kernel runtime parameters, persistent and non-persistent</s> [Here](/runtime_parameters.md)
-* Use scripting to automate system maintenance tasks
+* Use scripting to automate system maintenance tasks 
 * Manage the startup process and services (In Services Configuration)
 * List and identify SELinux/AppArmor file and process contexts
 * Identify the component of a Linux distribution that a file belongs to 
