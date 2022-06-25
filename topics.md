@@ -27,6 +27,7 @@
 * Manage the startup process and services (In Services Configuration)
 * List and identify SELinux/AppArmor file and process contexts
 * Identify the component of a Linux distribution that a file belongs to 
+* Systemd - [here](/systemd.md)
 ---
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
