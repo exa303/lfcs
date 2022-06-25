@@ -3,4 +3,19 @@ Systemctl is an extremely powerful Linux utility that comes with systemd. It com
 
 **Listing Units**
 
-* `systemctl list-unit-files --type service` - To check which services are installed in the local Linux system, execute this command (we are assuming you are the root user).
+* `systemctl list-unit-files --type=service` - To check which services are installed in the local Linux system, execute this command (we are assuming you are the root user).
+
+* `systemctl list-units --type=service --state=running` - services that are actually running or currently active in memory.
+
+* `systemctl list-dependencies <unit file>` - The following command shows the resources a service unit will depend on or the resource units that will depend on this service in recursive manner.
+
+* `systemctl --failed` - units that failed to load or activate, they’ll be listed here.
+
+* If you suspect a particular service failed, you can use the is-failed parameter with systemctl. Taking the example of apache2.service, if we execute the following command:
+	* `systemctl is-failed apache2.service`
+
+* `systemctl enable specific.service` - this will make specific service start at boot.
+
+---
+
+* `systemd-analyze` - systemd-analyze can provide valuable information about total time taken by the boot process. 
