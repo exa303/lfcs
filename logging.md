@@ -47,3 +47,56 @@ Centralizing your logs makes searching through log data easier and faster, since
 *	Engineers can troubleshoot production issues without directly accessing systems.
 
 While centralized log management is generally the better option, there are still some risks such as poor net connectivity leading to data loss, or logs using a great deal of network bandwidth. We’ll discuss how to intelligently address these issues in the sections below.
+
+
+### Configure Rsyslog.conf
+
+The main rsyslog configuration file is located at `etc/rsyslog.conf.` You can store additional configuration files in the `/etc/rsyslog.d/` directory. For example, on Ubuntu, this directory contains `/etc/rsyslog.d/50-default.conf`, which instructs rsyslog to write the system logs to file.
+
+Rsyslog provides the imfile module, which allows it to monitor log files for new events. This lets you specify a file or directory as a log source. Rsyslog can monitor individual files as well as entire directories.
+
+For example, we want to monitor log files created by the Apache server. We can do so by creating a new file in `/etc/rsyslog.d/` called `apache.conf`, load the imfile module, and add Apache’s log files as inputs:
+```
+# Apache access log:
+input(type="imfile" File="/var/log/apache2/access.log" Tag="apache-access" Severity="info")
+# Apache error file:
+input(type="imfile" File="/var/log/apache2/error.log" Tag="apache-error" Severity="warning")
+
+```
+
+
+### Which Protocol: UDP, TCP, or RELP?
+
+There are three main protocols you can choose from when transmitting log data: UDP, TCP, and RELP.
+
+* `UDP` sends messages without guaranteeing delivery or an acknowledgement of receipt (ACK). It makes a single attempt to send a packet, and if the delivery fails, it does not try again. It’s much faster and uses fewer resources than other protocols, but should only be used on reliable networks such as localhost. UDP also doesn’t support encrypting logs.
+
+* `TCP` is the most commonly used protocol for streaming over the Internet, since it requires an ACK before sending the next packet. If the delivery fails, it will continue retrying until it successfully delivers the message. However, TCP requires a handshake and active connection between the sender and the receiver, which uses additional network resources.
+
+* `RELP` (Reliable Event Logging Protocol) is designed specifically for rsyslog and is arguably the most reliable of these three protocols. It acknowledges receipt of data in the application layer and will resend if there is an error. Since it’s less common, you will need to make sure your destination also supports this protocol.
+
+If rsyslog encounters a problem when storing logs, such as an unavailable network connection, it will queue the logs until the connection is restored. The queued logs are stored in memory by default. However, memory is limited and if the problem persists, the logs can exceed memory capacity, which can lead to data loss. To prevent this, consider using disk queues.
+
+***Warning: You can lose data if you store logs only in memory.***
+
+
+### Reliably Send with Disk-assisted Queues
+
+Rsyslog can queue your logs to disk when memory is full. Disk-assisted queues make transport of logs more reliable. Here is an example of how to configure a log forwarding rule in rsyslog with a disk-assisted queue.
+
+```
+action(type="omfwd"		# Use with the omfwd module
+	protocol="tcp"		# Use the TCP protocol
+	target="myserver"	# Target server address
+	port="6514"		# Target server port
+queue.filename="fwdRule1"	# Prefix for backup files created on disk
+queue.maxDiskSpace="1000000000"	# Reserve 1GB of disk space
+queue.saveOnShutdown="on"	# Save messages to disk on shutdown
+queue.type="LinkedList"		# Allocate memory dynamically
+action.resumeRetryCount="1"	# Keep trying if the target server can’t be contacted)
+```
+
+
+---
+**Resources:**
+[loggy](https://www.loggly.com/ultimate-guide/managing-linux-logs/)
