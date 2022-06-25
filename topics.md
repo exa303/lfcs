@@ -16,7 +16,7 @@
 * <s>Boot or change system into different operating modes</s> [RUNLEVEL](/run_levels.md) **TBC**
 * Install, configure and troubleshoot bootloaders
 * Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) **TBC**
-* Locate and analyze system log files [Linux](/logging.md) **TBC**, [systemd](/loggd.md) **TBC** 
+* <s>Locate and analyze system log files [Linux](/logging.md)</s>, [systemd](/loggd.md) **TBC** 
 * <s>Schedule tasks to run at a set date and time</s> [Cron](/cron.md) 
 * <s>Verify completion of scheduled jobs</s> **"Write a logging utility that tracks events"**
 * Update software to provide required functionality and security
