@@ -87,9 +87,9 @@ echo "hello $name"
 
 ## Colors in bash
 
-* `echo -e "\e[0;31m *** this text should be in red *** \e[0m"` - \e escape
+* `echo -e "\e[0;31m *** this text should be in red *** \e[0m"` - `\e` escape
 
-**special char's**
+**special char's:**
 
 ```bash
 \\ - backslash
