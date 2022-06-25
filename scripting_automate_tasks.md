@@ -1,4 +1,6 @@
-### Writing a script to display system information
+### Automating tasks with scripting (short intro)
+
+## Writing a script to display system information
 
 ```bash
 #!/bin/bash
