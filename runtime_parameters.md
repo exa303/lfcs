@@ -1,6 +1,6 @@
-### Change kernel runtime parameters, persistent and non-persistent
+# Change kernel runtime parameters, persistent and non-persistent
 
-## the /proc Filesystem
+### the /proc Filesystem
 
 The actual internal structure of /proc/sys depends heavily on the kernel being used, but you are likely to find the following directories inside. In turn, each of them will contain other subdirectories where the values for each parameter category are maintained:
 
@@ -12,7 +12,7 @@ The actual internal structure of /proc/sys depends heavily on the kernel being u
 
    * `sysctl -a ` - complete list of Kernel parameters.
 
-## Change or Modify Linux Kernel Runtime Parameteres
+### Change or Modify Linux Kernel Runtime Parameteres
 
 To set the value for a kernel parameter we can also use sysctl, but using the -w option and followed by the parameter’s name, the equal sign, and the desired value.
 
