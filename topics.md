@@ -17,8 +17,8 @@
 * Install, configure and troubleshoot bootloaders
 * Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) **TBC**
 * Locate and analyze system log files [Linux](/logging.md) **TBC**, [systemd](/loggd.md) **TBC** 
-* Schedule tasks to run at a set date and time
-* Verify completion of scheduled jobs
+* Schedule tasks to run at a set date and time [Cron](/cron.md)
+* Verify completion of scheduled jobs 
 * Update software to provide required functionality and security
 * Verify the integrity and availability of resources
 * Verify the integrity and availability of key processes
