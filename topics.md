@@ -1,4 +1,3 @@
-
 * <s>Log into local & remote graphical and text mode consoles</s> 
 * <s>Search for files</s> [Find](/find.md)
 * <s>Evaluate and compare the basic file system features and options [FS](/file_system.md)</s>
@@ -16,7 +15,7 @@
 * <s>Boot or change system into different operating modes</s> [RUNLEVEL](/run_levels.md) **TBC**
 * Install, configure and troubleshoot bootloaders
 * Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) **TBC**
-* <s>Locate and analyze system log files [Linux](/logging.md)</s>, [systemd](/loggd.md) **TBC** 
+* <s>Locate and analyze system log files</s> [Linux](/logging.md), [systemd](/loggd.md) **TBC** 
 * <s>Schedule tasks to run at a set date and time</s> [Cron](/cron.md) 
 * <s>Verify completion of scheduled jobs</s> **"Write a logging utility that tracks events"**
 * Update software to provide required functionality and security
@@ -24,10 +23,10 @@
 * Verify the integrity and availability of key processes **?**
 * <s>Change kernel runtime parameters, persistent and non-persistent</s> [Here](/runtime_parameters.md)
 * <s>Use scripting to automate system maintenance tasks </s> [Here](/scripting_automate_tasks.md)
-* Manage the startup process and services (In Services Configuration)
+* <s>Manage the startup process and services (In Services Configuration)</s> [Here](/systemd.md)
 * List and identify SELinux/AppArmor file and process contexts
-* Identify the component of a Linux distribution that a file belongs to 
-* Systemd - [here](/systemd.md)
+* Identify the component of a Linux distribution that a file belongs to [Here](/identify_which_file_belongs_to.md)
+* Systemd - [here](/systemd.md) **TBC**
 ---
 * <s>Create, delete, and modify local user accounts</s>
 * <s>Create, delete, and modify local groups and group memberships</s>
