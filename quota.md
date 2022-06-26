@@ -1,17 +1,18 @@
 
-h
+
 
 # Quota
 
 First you need to install `quota` and `quotatool`. 
 
 
-Surces:
+Sources:
 
+
+* [askubunut](https://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user)
+* [sourceforge](http://souptonuts.sourceforge.net/quota_tutorial.html)
 
 ---
-* [askubunut](ttps://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user)
-* [sourceforge](http://souptonuts.sourceforge.net/quota_tutorial.html)
 
 
 ### Alternative
