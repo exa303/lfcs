@@ -3,4 +3,4 @@
 ## Topics:
 
 * Conditionals
-* Tricky stuff
+* [Tricky stuff](/awk/tricks.md)
