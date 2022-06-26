@@ -17,20 +17,20 @@ To restrict hard disk usage per user efficiently we could create a separate part
 
 We therefore may use fixed sized images as a container for the users `/home` and mount these as loop devices (as root):
 
-*1 `mkdir /media/users/`
-*2 `dd if=/dev/zero of=/media/users/john123.img bs=512K count=200`
-*3 `mkfs.ext4 /media/users/john123.img`
-*4 `mkdir /home/john123`
+* 1 `mkdir /media/users/`
+* 2 `dd if=/dev/zero of=/media/users/john123.img bs=512K count=200`
+* 3 `mkfs.ext4 /media/users/john123.img`
+* 4 `mkdir /home/john123`
 
 For testing:
 
-*5 `mount -o loop /media/users/john123.img /home/john123`
+* 5 `mount -o loop /media/users/john123.img /home/john123`
 
 After having done so we then create our user `john123` who will now have 100 MB space available in his `/home/john123`.
 
 Subsequently the loop devices will have to be mounted prior to login, e.g. by adding this to `/etc/fstab`:
 
-*6 /media/users/john123.img    /home/john123    ext4    loop    0    2
+* 6 /media/users/john123.img    /home/john123    ext4    loop    0    2
 
 
 ## fstab
