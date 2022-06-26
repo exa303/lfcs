@@ -47,7 +47,20 @@ The table itself is a 6 column structure, where each column designates a specifi
 
 * **Device:** usually the given name or UUID of the mounted device (sda1/sda2/etc).
 * **Mount Point:** designates the directory where the device is/will be mounted. 
-* **File System Type:** nothing trick here, shows the type of filesystem in use. 
+* **File System Type:** shows the type of filesystem in use. 
 * **Options:** lists any active mount options. If using multiple options they must be separated by commas. 
 * **Backup Operation:** (the first digit) this is a binary system where 1 = dump utility backup of a partition. 0 = no backup. This is an outdated backup method and should NOT be used. 
 * **File System Check Order:** (second digit) Here we can see three possible outcomes.  0 means that fsck will not check the filesystem. Numbers higher than this represent the check order. The root filesystem should be set to 1 and other partitions set to 2. 
+
+`sudo mount -o remount -a` - will remount all fs widouth restart `-o` for option `-a` for all.
+
+
+
+## Advanced usage
+
+There are other options for more advanced users that I do not have configured here (therefore, there are no examples shown). However, there are some great resources on the web to explain these options. The ones that I would check out are as follows:
+
+* auto/noauto: controls whether the partition is mounted automatically on boot (or not).
+* exec/noexec: controls whether or not the partition can execute binaries. In the name of security, this is usually set to noexec.
+* ro/rw: controls read and write privileges - ro = read-only, where rw= read-write.
+* nouser/user: controls whether or not the user has mounting privileges. This defaults to noexec for all user accounts.
