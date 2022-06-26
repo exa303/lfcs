@@ -39,5 +39,6 @@ It is executed like this: cmd result1 result2 … result N.
 * `find . -type f -size +1G -exec du -hs {} \;` - find files bigger then 1G and show theyr actual size for each of them.
 * `find / -type f -name ‘howtouselinux*’ -exec mv {} {}_renamed \;` rename all files.
 * `find ./ -type f -exec bash -c ‘ls -lrt {}’ \;` - combine find exec with shell script function.
+* `find / -type f -ls -user avx` - list files with inode number (at firs field), permissions, size.
 
 
