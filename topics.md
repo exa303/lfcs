@@ -33,7 +33,7 @@
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * <s>Manage template user environment</s> [Read](/template_usr_env.md) **TBC**
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
-* <s>Manage user privileges</s> **Privileges != permissions ?**
+* <s>Manage user privileges</s> [Quota](/quota.md)
 ---
 * Configure networking and hostname resolution statically or dynamically
 * Configure network services to start automatically at boot

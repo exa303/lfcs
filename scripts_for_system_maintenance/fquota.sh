@@ -10,12 +10,13 @@ fi
 echo "Runing..."
 
 BORDERLINE=20000 #in Megabytes
+DIR="/home"
 
 for name in $(cat /etc/passwd | cut -d: -f1,2 | awk -F: '$2>99{print $1}'); do
 
 	echo -n "User $name exceeds disk quota. Disk usage is:"
 			# <- change directories based on the system 
-	find /home -xdev -user $name -type f -ls | awk '{sum += $7} END {print sum / (1024*1024)}'
+	find $DIR -xdev -user $name -type f -ls | awk '{sum += $7} END {print sum / (1024*1024)}'
 
 done | awk -F: "\$2 > $BORDERLINE {print \$0}"
 
