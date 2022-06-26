@@ -7,14 +7,18 @@ if [[ `id -u` -ne 0 ]]; then
 	exit 1
 fi
 
-BORDERLINE=20000 #in Megabytes
+echo "Runing..."
+
+BORDERLINE=20 #in Megabytes
 
 for name in $(cat /etc/passwd | cut -d: -f1,2 | awk -F: '$2>99{print $1}'); do
 
 	echo -n "User $name exceeds disk quota. Disk usage is:"
 			# <- change directories based on the system 
-	find /home/avx/Desktop -xdev -user $name -type f -ls | awk '{sum += $7} END {print $sum / (1024*1024) "Mbytes"}'
+	find /home -xdev -user $name -type f -ls | awk '{sum += $7} END {print sum / (1024*1024)}'
 
-done | awk "\$9 > $BORDERLINE {print \$0}" #flow if statement, \ becouse it is new awk command
+done | awk -F: "\$2 > $BORDERLINE {print \$0}"
+#awk -F: '$2 > $BORDERLINE {print $0}'
+#| awk "\$9 > $BORDERLINE {print \$0}" #flow if statement, \ becouse it is new awk command
 echo "Done."
 exit 0
