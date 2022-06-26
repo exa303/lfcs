@@ -22,7 +22,7 @@
 * Verify the integrity and availability of resources **?**
 * Verify the integrity and availability of key processes **?**
 * <s>Change kernel runtime parameters, persistent and non-persistent</s> [Here](/runtime_parameters.md)
-* <s>Use scripting to automate system maintenance tasks </s> [Here](/scripts_for_system_maintenance/)
+* <s>**Use scripting to automate system maintenance tasks** </s> [Here](/scripts_for_system_maintenance/)
 * <s>Manage the startup process and services (In Services Configuration)</s> [Here](/systemd.md)
 * List and identify SELinux/AppArmor file and process contexts
 * <s>Identify the component of a Linux distribution that a file belongs to</s> [Here](/identify_which_file_belongs_to.md) **TBC**
