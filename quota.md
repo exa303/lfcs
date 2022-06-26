@@ -1,14 +1,17 @@
-http://souptonuts.sourceforge.net/quota_tutorial.html
-https://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user
+
+h
 
 # Quota
 
 First you need to install `quota` and `quotatool`. 
 
 
+Surces:
 
 
 ---
+* [askubunut](ttps://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user)
+* [sourceforge](http://souptonuts.sourceforge.net/quota_tutorial.html)
 
 
 ### Alternative
@@ -30,7 +33,7 @@ After having done so we then create our user `john123` who will now have 100 MB 
 
 Subsequently the loop devices will have to be mounted prior to login, e.g. by adding this to `/etc/fstab`:
 
-* 6 /media/users/john123.img    /home/john123    ext4    loop    0    2
+* 6 `/media/users/john123.img    /home/john123    ext4    loop    0    2`
 
 
 ## fstab
