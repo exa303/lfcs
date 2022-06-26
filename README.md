@@ -7,8 +7,8 @@ START by klicking on [topics.md](/topics.md)
 ### Additional Notes 
 
 * [Bash Scripting](/bash_scripting.md)
-* [AWK](/awk_scripting.md)
-* [SED](/sed.md)
+* [AWK](/awk_scripting.md) **TBD**
+* [SED](/sed.md) **TBD**
 
 
 ### References
