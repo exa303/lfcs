@@ -5,4 +5,5 @@
 * `ps --pid 1` or `ps -p 1` - get the name of process which has id 1
 * `ps -eo %mem` - `e` selects all of the processes `o` formats output, in this case just show %mem
 `-e == -A` can use `A` like All insted of e.
-	* `ps -Ao %mem,command --sort=-%mem` - will sort processes from all of processes that take most of memory and will show how much memory it is taking also will show FULL command of the process. `command` can be shortened to `comm` for SHORT command. **DO NOT FORGET `,` and NO SPACES** 
+	* `ps -Ao %mem,command --sort=-%mem` - will sort processes from all of processes that take most of memory and will show how much memory it is taking also will show FULL command of the process. `command` can be shortened to `comm` for SHORT command. **DO NOT FORGET `,` and NO SPACES**
+	 
