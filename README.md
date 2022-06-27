@@ -7,6 +7,7 @@ START by klicking on [topics.md](/topics.md)
 
 ## Utilities
 * [dd](/command_line_utilities/dd.md)
+* [fdisk](/command_line_utilities/fdisk.md)
 
 
 ## Additional Notes 

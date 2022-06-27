@@ -18,6 +18,35 @@ The basic steps to take :
 
 A reboot should not be necessary.
 
+* Turn off the swap partition with the command which turns off all swap space:
+	* `swapoff -a`
+
+* Now display the existing partitions on the hard drive.
+	* `fdisk -l`
+
+* Start fdisk in interactive mode with the command:
+	* `fdisk /dev/<device name>` - At this point, fdisk is interactive and operates only on the specified disk drive.
+
+* Use the `fdisk p` sub-command to verify that there is enough free space on the disk to create the new swap partition. The space on the hard drive is shown in terms of 512-byte blocks and starting and ending cylinder numbers, so you may have to do some math to determine the available space between and at the end of allocated partitions.
+
+* Use the `n` sub-command to create a new swap partition. fdisk will ask you the starting cylinder. By default, it chooses the lowest-numbered available cylinder. If you wish to change that, type in the number of the starting cylinder.
+
+* The fdisk command now allows you to enter the size of the partitions in a number of formats, including the last cylinder number or the size in bytes, KB or MB. Type in 4000M, which will give about 4GB of space on the new partition (for example), and press Enter.
+
+* Use the `p` sub-command to verify that the partition was created as you specified it. Note that the partition will probably not be exactly what you specified unless you used the ending cylinder number. The fdisk command can only allocate disk space in increments on whole cylinders, so your partition may be a little smaller or larger than you specified. If the partition is not what you want, you can delete it and create it again.
+
+* Now it is necessary to specify that the new partition is to be a swap partition. The sub-command `t` allows you to specify the type of partition. So enter t, specify the partition number, and when it asks for the hex code partition type, `type 82`, which is the Linux swap partition type, and press Enter.
+
+* When you are satisfied with the partition you have created, use the `w` sub-command to write the new partition table to the disk. The fdisk program will exit and return you to the command prompt after it completes writing the revised partition table. **WRITE WHEN YOU ARE SURE**.
+
+* At this point, you use the `partprobe` command to force the kernel to re-read the partition table so that it is not necessary to perform a reboot.
+
+* Now use the command `fdisk -l` to list the partitions and the new swap partition should be among those listed. Be sure that the new partition type is “Linux swap”.
+
+* `mkswap /dev/<new_swap_partition>`
+
+* `swapon -a` - turn swap on.
+
 
 
 ## Swapfile
@@ -104,5 +133,6 @@ Swap space recomendations:
 ## References
 
 [redhat],(https://www.redhat.com/sysadmin/managing-swap)
-[Dave McKay article](https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/amp/)
+[Dave McKay article],(https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/amp/)
+[Opensource.com](https://opensource.com/article/18/9/swap-space-linux-systems)
 
