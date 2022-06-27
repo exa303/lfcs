@@ -62,7 +62,7 @@
 * <s>Configure systems to mount file systems at or during boot</s> **fstab**
 * <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
 * Create and manage RAID devices
-* Configure systems to mount file systems on demand [autofs](/autofs.md)
+* Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 * Create, manage and diagnose advanced file system permissions
 * Setup user and group disk quotas for filesystems
 * Create and configure file systems 
