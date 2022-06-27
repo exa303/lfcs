@@ -17,22 +17,22 @@ In order to mount swapfile on boot up you need to edit `/etc/fstab`.
 after rebooting system check total swapspace with `free -m`.
 
 Swap space recomendations: 
-<table>
-<thead>
-  <tr>
-    <th class="tg-0pky">asad</th>
-    <th class="tg-0pky">as</th>
-    <th class="tg-0pky">as</th>
-    <th class="tg-0pky">as</th>
-    <th class="tg-0pky"></th>
-  </tr>
-</thead>
-<tbody>
-	<tr>
-		<td>1</td>
-	</tr>
 
-</tbody>
+<table>
+
+
+  <tr>
+    <th>Amount of system RAM/th>
+    <th>as</th>
+    <th>as</th>
+    <th>as</th>
+    <th></th>
+  </tr>
+
+<tr>
+	<td>1</td>
+</tr>
+
 
 <table>
 
