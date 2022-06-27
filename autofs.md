@@ -16,7 +16,7 @@ autofs config file:
 map file:
 
 * `/etc/test.share` - map file:
-	`/Softwares -fstype=auto server:/Softwares` - <mount end point>, <file system type>, <SOURCE>
+	`/Softwares -fstype=auto server:/Softwares` - `<mount end point>, <file system type>, <SOURCE>`
 
 
 
