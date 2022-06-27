@@ -132,7 +132,7 @@ Swap space recomendations:
 
 ## References
 
-[redhat],(https://www.redhat.com/sysadmin/managing-swap)
-[Dave McKay article],(https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/amp/)
-[Opensource.com](https://opensource.com/article/18/9/swap-space-linux-systems)
+* [redhat](https://www.redhat.com/sysadmin/managing-swap)
+* [Dave McKay article](https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/amp/)
+* [Opensource.com](https://opensource.com/article/18/9/swap-space-linux-systems)
 
