@@ -7,10 +7,16 @@
 
 The autofs service can mount and unmount file systems automatically (on-demand), therefore saving system resources. It can be used to mount file systems such as NFS, AFS, SMBFS, CIFS, and local file systems. 
 
+autofs config file:
 
-* `vim /etc/auto.master` - master configuration file for autofs
-	* tree fields: direktory to mount, mount map file, parameters 
-	`/mnt 	/etc/test.share 	--timeout=30`
+* `/etc/auto.master` - master configuration file for autofs
+	* tree fields: directory to mount(mount-point), mount map file, parameters 
+	`/mnt 	/etc/test.share 	--timeout=30`  - after 30 seconds if files have not been uset autofs will umount it automaticaly.
+
+map file:
+
+* `/etc/test.share` - map file:
+	`/Softwares -fstype=auto server:/Softwares` - <mount end point>, <file system type>, <SOURCE>
 
 
 
