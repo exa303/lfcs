@@ -20,9 +20,9 @@ Swap space recomendations:
 
   <tr>
     <th class="tg-0pky">asad</th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
-    <th class="tg-0pky"></th>
+    <th class="tg-0pky">as</th>
+    <th class="tg-0pky">as</th>
+    <th class="tg-0pky">as</th>
     <th class="tg-0pky"></th>
   </tr>
 
