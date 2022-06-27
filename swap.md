@@ -1,9 +1,27 @@
 # Swap
 
+## Swap partition
+
+The basic steps to take :
+
+    Turn off the existing swap space.
+
+    Create a new swap partition of the desired size.
+
+    Reread the partition table.
+
+    Configure the partition as swap space.
+
+    Add the new partition/etc/fstab.
+
+    Turn on swap.
+
+A reboot should not be necessary.
+
+
 
 ## Swapfile
-
-* `swapon` - check location size and priority of a swapfile. If nothing showsup swap is disabled.
+* `swapon` - check location size and priority of a swapfile. If nothing shows up swap, it is disabled.
 * `swapoff /<location of a swapfile>` -turn off swap space. 
 
 **Create swap file**
@@ -85,6 +103,6 @@ Swap space recomendations:
 
 ## References
 
-[redhat](https://www.redhat.com/sysadmin/managing-swap)
+[redhat],(https://www.redhat.com/sysadmin/managing-swap)
 [Dave McKay article](https://www.howtogeek.com/449691/what-is-swapiness-on-linux-and-how-to-change-it/amp/)
 
