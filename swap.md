@@ -18,23 +18,67 @@ after rebooting system check total swapspace with `free -m`.
 
 Swap space recomendations: 
 
-<table>
-
-
-  <tr>
-    <th>Amount of system RAM/th>
-    <th>as</th>
-    <th>as</th>
-    <th>as</th>
-    <th></th>
-  </tr>
-
+<table width="672" cellspacing="0" cellpadding="4" bordercolor="#000000" border="1">
+<thead>
 <tr>
-	<td>1</td>
+<th width="167">
+<p align="LEFT"><b>Amount of system RAM</b></p>
+</th>
+<th width="210">
+<p align="LEFT"><b>Recommended swap space</b></p>
+</th>
+<th width="257">
+<p align="LEFT"><b>Recommended swap with hibernation</b></p>
+</th>
 </tr>
-
-
-<table>
+</thead>
+<tbody>
+<tr>
+<td width="167">
+<p align="LEFT">less than 2 GB</p>
+</td>
+<td width="210">
+<p align="LEFT">2 times the amount of RAM</p>
+</td>
+<td width="257">
+<p align="LEFT">3 times the amount of RAM</p>
+</td>
+</tr>
+<tr>
+<td width="167">
+<p align="LEFT">2 GB - 8 GB</p>
+</td>
+<td width="210">
+<p align="LEFT">Equal to the amount of RAM</p>
+</td>
+<td width="257">
+<p align="LEFT">2 times the amount of RAM</p>
+</td>
+</tr>
+<tr>
+<td width="167">
+<p align="LEFT">8 GB - 64 GB</p>
+</td>
+<td width="210">
+<p align="LEFT">0.5 times the amount of RAM</p>
+</td>
+<td width="257">
+<p align="LEFT">1.5 times the amount of RAM</p>
+</td>
+</tr>
+<tr>
+<td width="167">
+<p align="LEFT">more than 64 GB</p>
+</td>
+<td width="210">
+<p align="LEFT">workload dependent</p>
+</td>
+<td width="257">
+<p align="LEFT">hibernation not recommended</p>
+</td>
+</tr>
+</tbody>
+</table>
 
 
 
