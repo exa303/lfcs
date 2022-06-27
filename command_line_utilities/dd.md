@@ -5,6 +5,7 @@
 * `count` - determines number of blocks that will be moved`dd if=file1 of=file2 bs=1M count=2`
 * `skip` - how many blocks(default 512) to skip from begining of the INPUT file `dd if=file1 of=file2 bs=1 skip=3`
 * `seek` - how many bytes to skip in OUTPUT file before start writing
+* `status=progress` - just to show verbose output
 
 
 ```

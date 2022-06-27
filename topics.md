@@ -60,7 +60,7 @@
 * Manage and configure LVM storage
 * Create and configure encrypted storage
 * Configure systems to mount file systems at or during boot
-* Configure and manage swap space
+* Configure and manage swap space [swap](/swap.md)
 * Create and manage RAID devices
 * Configure systems to mount file systems on demand
 * Create, manage and diagnose advanced file system permissions
