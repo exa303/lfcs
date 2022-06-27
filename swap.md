@@ -4,17 +4,17 @@
 
 The basic steps to take :
 
-    Turn off the existing swap space.
+  1  Turn off the existing swap space.
 
-    Create a new swap partition of the desired size.
+  2  Create a new swap partition of the desired size.
 
-    Reread the partition table.
+  3  Reread the partition table.
 
-    Configure the partition as swap space.
+  4  Configure the partition as swap space.
 
-    Add the new partition/etc/fstab.
+  5  Add the new partition/etc/fstab.
 
-    Turn on swap.
+  6  Turn on swap.
 
 A reboot should not be necessary.
 
@@ -32,7 +32,7 @@ A reboot should not be necessary.
 * 4 `sudo swapon /swapfile2`
 
 In order to mount swapfile on boot up you need to edit `/etc/fstab`.
-after rebooting system check total swapspace with `free -m`.
+after rebooting system check total swap space with `free -m`.
 
 Swap space recomendations: 
 
