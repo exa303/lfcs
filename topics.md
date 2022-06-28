@@ -33,7 +33,7 @@
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * <s>Manage template user environment</s> [Read](/template_usr_env.md) **TBC**
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
-* Manage user privileges [Quota](/quota.md)
+* <s>Manage user privileges</s> **chmod** 
 ---
 * Configure networking and hostname resolution statically or dynamically
 * Configure network services to start automatically at boot
@@ -56,7 +56,7 @@
 * Manage and configure containers
 * Manage and configure Virtual Machines 
 ---
-* List, create, delete, and modify physical storage partitions
+* <s>List, create, delete, and modify physical storage partitions</s> [fdisk](/command_line_utilities/fdisk.md)
 * Manage and configure LVM storage
 * Create and configure encrypted storage
 * <s>Configure systems to mount file systems at or during boot</s> **fstab**
@@ -64,6 +64,6 @@
 * Create and manage RAID devices
 * Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 * Create, manage and diagnose advanced file system permissions
-* Setup user and group disk quotas for filesystems
-* Create and configure file systems 
+* Setup user and group disk quotas for filesystems [Quota](/quota.md)
+* <s>Create and configure file systems</s> **mkfs fdisk dd**
 ---
