@@ -12,7 +12,7 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 	* `-j` - policy DROP
 
 ---
-** Subnets **
+**Subnets**
 * `iptables -I INPUT -s 10.0.0.1/24 -j DROP` 
 ---
 
