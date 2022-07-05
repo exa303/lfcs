@@ -35,9 +35,9 @@
 * <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
 * <s>Manage user privileges</s> **chmod** 
 ---
-* Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md)
-* Configure network services to start automatically at boot
-* Implement packet filtering
+* Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
+* <s>Configure network services to start automatically at boot</s> **via systemctl**
+* Implement packet filtering [](/packet_filtering.md)
 * Start, stop, and check the status of network services
 * Statically route IP traffic
 * Synchronize time using other network peers 
