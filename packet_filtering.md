@@ -8,13 +8,13 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 * `iptables -I INPUT -s 10.0.0.1 -j DROP` :
 	* `-I` - insert new rule.
 	* `INPUT` - this is chain. There are 3 chains `INPUT` `OUTPUT` `FORWARD`
-	* `-s` - trafic from Source and sourcess ip adress
+	* `-s` - trafic from Source 
 	* `-j` - policy DROP
 
 ---
 ** Subnets **
 * `iptables -I INPUT -s 10.0.0.1/24 -j DROP` 
-
+---
 
 * `iptables -L` - show all policies.
 * `iptables --flush` - flushes all the rules.  
