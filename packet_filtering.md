@@ -11,10 +11,11 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 	* `-s` - trafic from Source 
 	* `-j` - policy DROP
 
----
-**Subnets**
+
+## Subnets 
 * `iptables -I INPUT -s 10.0.0.1/24 -j DROP` 
----
+	* Add a rule to entire subnet.
+
 
 * `iptables -L` - show all policies.
 * `iptables --flush` - flushes all the rules.  
