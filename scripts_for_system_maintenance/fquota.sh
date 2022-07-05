@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #in order to access all directories efectivaly run this program as a root.
+#this program checks what is the usage(space) of each user on a system
+#if it is above BORDERLINE metric, program notifies.
 
 if [[ `id -u` -ne 0 ]]; then
 	echo "Please run $0 as ROOT"
