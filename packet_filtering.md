@@ -20,22 +20,24 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 	* Add a rule to entire subnet.
 
 ## Ports
-* `iptables -I INPUT -s 10.0.0.1 -p tcp --dport 80 -j DROP`:
+* `iptables -I INPUT -p tcp --dport 80 -j DROP`: this will drop ALL trafic comming to port 80.
 	* `-p` - protocol.
 	* `--dport` - destination protocol. 
+
+* `iptables -I INPUT -p tcp --dport 80 -s 177.535.33.123 -j ACCEPT` : it will accept tcp requests to port 80 only from ip 177.535.33.123 (assuming you still have previous rule active). 
 
 
 ## Other commands
 
+* `sudo /sbin/iptables-save` - save changes to make them persistent.
 * `iptables -L` - show all policies.
-* `iptables --flush` - flushes all the rules.  
+* `iptables --flush` - flushes all the rules. or `-F`
 * `iptables -L --line-numbers` - shows rules with line numbers.
 * `iptables -D INPUT 1` - delete 1 rule from INPUT chain.
 
 ---
 
-* `iptables -A INPUT --protocol icmp --in-interface enp0s3 -j DROP`
-	* block incomming pings to the network interface on this server
+* `iptables -A INPUT --protocol icmp --in-interface enp0s3 -j DROP`: this will block incomming pings to the network interface on this server. 
 
 * `iptables -I OUTPUT -s <ip adress> -j REJECT`
 

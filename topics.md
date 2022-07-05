@@ -37,8 +37,8 @@
 ---
 * Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
 * <s>Configure network services to start automatically at boot</s> **via systemctl**
-* Implement packet filtering [Ip tables](/packet_filtering.md)
-* Start, stop, and check the status of network services
+* <s>Implement packet filtering</s> [Ip tables](/packet_filtering.md)
+* Start, stop, and check the status of network services[via systemd](/start_stop_network_service.md)
 * Statically route IP traffic
 * Synchronize time using other network peers 
 ---
