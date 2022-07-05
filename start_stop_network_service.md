@@ -46,3 +46,33 @@
 <td>systemctl list-units –type service –all</td>
 <td>Displays the status of all services</td>
 </table>
+
+## Enabling and disabling services
+<table>
+<tbody><tr>
+<th>chkconfig Utility </th>
+<th>systemctl Utility </th>
+<th>Description </th>
+</tr>
+<tr>
+<td>chkconfig name on </td>
+<td>systemctl enable name</td>
+<td>Enables a service</td>
+</tr>
+<tr>
+<td>chkconfig name off </td>
+<td>systemctl disable name</td>
+<td>Disables a service </td>
+</tr>
+<tr>
+<td>chkconfig –list name</td>
+<td>systemctl status name, systemctl is-enabled name</td>
+<td>Checks whether a service is enabled </td>
+</tr>
+<tr>
+<td>chkconfig –list</td>
+<td>systemctl list-unit-files –type service</td>
+<td>Lists all services and checks whether they are enabled</td>
+</tr>
+</tbody>
+</table>
