@@ -40,7 +40,7 @@
 * <s>Implement packet filtering</s> [Ip tables](/packet_filtering.md)
 * <s>Start, stop, and check the status of network services</s> [via systemd](/start_stop_network_service.md)
 * <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
-* Synchronize time using other network peers [NTP](/ntp.md)
+* <s>Synchronize time using other network peers</s> [NTP](/ntp.md)
 ---
 * Configure a caching DNS server
 * Maintain a DNS zone
