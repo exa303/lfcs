@@ -47,7 +47,7 @@ By default it is not installed in CentOS 7 or other distro, so you will first ne
 `sudo apt-get install ntp`
 
 * `systemctl enable ntp` - make sure that the ntpd service starts up automatically on boot so that we can maintain accurate time.
-* `systemctl start ntp`  - start the service. Don't forget to disable `systemd-timesyncd.service` with `timedatectl set-ntp 0` before you start ntp server.
+* `systemctl start ntp`  - start the service. **Don't forget to disable `systemd-timesyncd.service` with `timedatectl set-ntp 0` before you start ntp server.**
 
 The configuration for ntpd is stored in the `/etc/ntp.conf` file.
 
