@@ -39,7 +39,7 @@
 * <s>Configure network services to start automatically at boot</s> [via systemd](/start_stop_network_service.md)
 * <s>Implement packet filtering</s> [Ip tables](/packet_filtering.md)
 * <s>Start, stop, and check the status of network services</s> [via systemd](/start_stop_network_service.md)
-* <s>Statically route IP traffic [ip route](/static_ip_routing.md)
+* <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
 * Synchronize time using other network peers [tut](https://www.rootusers.com/how-to-synchronize-time-in-linux-with-ntp-peers/)
 ---
 * Configure a caching DNS server
