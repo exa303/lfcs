@@ -58,10 +58,10 @@
 ---
 * <s>List, create, delete, and modify physical storage partitions</s> [fdisk](/command_line_utilities/fdisk.md)
 * Manage and configure LVM storage
-* Create and configure encrypted storage [cryptsetup](/encrypted_storage.md)
+* <s>Create and configure encrypted storage</s> [LUKS](/encrypted_storage.md)
 * <s>Configure systems to mount file systems at or during boot</s> **fstab**
 * <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
-* Create and manage RAID devices
+* Create and manage RAID devices [Raid](/raid.md)
 * Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 * Create, manage and diagnose advanced file system permissions
 * Setup user and group disk quotas for filesystems [Quota](/quota.md)
