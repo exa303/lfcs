@@ -64,6 +64,6 @@
 * Create and manage RAID devices [Raid](/raid.md)
 * Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 * Create, manage and diagnose advanced file system permissions
-* Setup user and group disk quotas for filesystems [Quota](/quota.md)
+* <s>Setup user and group disk quotas for filesystems</s> [Quota](/quota.md)
 * <s>Create and configure file systems</s> **mkfs fdisk dd**
 ---
