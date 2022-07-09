@@ -27,6 +27,29 @@ MulticastDNS setting: yes
 
 Then you are already running systemd-resolved and do not need to enable it.
 
+## Enabling and configuring systemd-resolved.
+
+We do not need to install systemd-resolved as already a part of systemd. All that we need to do is to start it to get the DNS caching server running and then enable it to start it on boot.
+
+* `sudo systemctl start systemd-resolved.service`
+* `sudo systemctl enable systemd-resolved.service` - enable at boot.
+
+The last item of configuration left is to set the DNS servers that systemd-resolved will query to resolved domains. There are many options here, but either of the following pairs is free, fast, and they both support DNSSEC and DoT:
+
+Google Public DNS:
+
+    8.8.8.8
+    8.8.4.4
+
+Cloudflare Public DNS:
+
+    1.1.1.1
+    1.0.0.1
+
+
+* `sudo nano /etc/systemd/resolved.conf` - configuration file for resolved.
+	* `DNS=1.1.1.1 1.0.0.1` - add this to config file.
+
 
 https://geekflare.com/linux-server-local-dns-caching/
 
