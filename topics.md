@@ -42,7 +42,7 @@
 * <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
 * <s>Synchronize time using other network peers</s> [NTP](/ntp.md)
 ---
-* Configure a caching DNS server
+* Configure a caching DNS server [resolved](/dns_caching.md)
 * Maintain a DNS zone
 * Configure email aliases
 * Configure SSH servers and clients
