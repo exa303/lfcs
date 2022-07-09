@@ -50,15 +50,15 @@
 * Configure an IMAP and IMAPS service **TBA**
 * Query and modify the behavior of system services at various operating modes **TBA**
 * Configure an HTTP server **Nginx/Apatche?**
-* Configure HTTP server log files
-* Configure a database server **mysql?** 
-* Restrict access to a web page
-* Manage and configure containers
-* Manage and configure Virtual Machines 
+* Configure HTTP server log files **TBA**
+* Configure a database server **mysql?** **TBA**
+* <s>Restrict access to a web page</s> [iptables]
+* Manage and configure containers **TBA**
+* Manage and configure Virtual Machines **TBA**
 ---
 * <s>List, create, delete, and modify physical storage partitions</s> [fdisk](/command_line_utilities/fdisk.md)
 * Manage and configure LVM storage
-* Create and configure encrypted storage
+* Create and configure encrypted storage [cryptsetup](/encrypted_storage.md)
 * <s>Configure systems to mount file systems at or during boot</s> **fstab**
 * <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
 * Create and manage RAID devices
