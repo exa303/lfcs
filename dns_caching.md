@@ -8,7 +8,7 @@ We do not need to install systemd-resolved as already a part of systemd. All tha
 
 If you get the message:
 ```
-$ resolvectl status
+systemd-resolve --status
 Failed to get global data: Unit dbus-org.freedesktop.resolve1.service not found.
 ```
 You are not running systemd-resolved and should move on to the next section. If, instead, you see output that begins with something like the following:
@@ -92,6 +92,8 @@ This edit may get changed by any other program that is managing /`etc/resolv.con
 
 
 ## Debugging systemd-resolved
+
+`systemd-resolved --statistics ` - shows state of the cache.
 
 Discovering exactly how your system is making DNS queries after you have made these changes can be difficult. The most effective way method of observing what is happening is to put systemd-resolved into debugging mode and watch the log file.
 

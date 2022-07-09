@@ -42,10 +42,10 @@
 * <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
 * <s>Synchronize time using other network peers</s> [NTP](/ntp.md)
 ---
-* Configure a caching DNS server [resolved](/dns_caching.md)
-* Maintain a DNS zone
-* Configure email aliases
-* Configure SSH servers and clients
+* <s>Configure a caching DNS server</s> [resolved](/dns_caching.md)
+* Maintain a DNS zone **TBA**
+* <s>Configure email aliases</s> [tut](/https://www.walkernews.net/2008/01/16/how-to-setup-email-alias-in-red-hat-linux/)
+* Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
 * Restrict access to the HTTP proxy server
 * Configure an IMAP and IMAPS service
 * Query and modify the behavior of system services at various operating modes
