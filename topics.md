@@ -46,12 +46,12 @@
 * Maintain a DNS zone **TBA**
 * <s>Configure email aliases</s> [tut](/https://www.walkernews.net/2008/01/16/how-to-setup-email-alias-in-red-hat-linux/)
 * Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
-* Restrict access to the HTTP proxy server
-* Configure an IMAP and IMAPS service
-* Query and modify the behavior of system services at various operating modes
-* Configure an HTTP server
+* Restrict access to the HTTP proxy server **TBA**
+* Configure an IMAP and IMAPS service **TBA**
+* Query and modify the behavior of system services at various operating modes **TBA**
+* Configure an HTTP server **Nginx/Apatche?**
 * Configure HTTP server log files
-* Configure a database server
+* Configure a database server **mysql?** 
 * Restrict access to a web page
 * Manage and configure containers
 * Manage and configure Virtual Machines 
