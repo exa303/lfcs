@@ -1,16 +1,28 @@
-# Introduction to RAID, Concepts of RAID and RAID Levels
-
-<b>RAID</b> is a Redundant Array of Inexpensive disks, but nowadays it is called Redundant Array of Independent drives. Earlier it is used to be very costly to buy even a smaller size of disk, but nowadays we can buy a large size of disk with the same amount like before. Raid is just a collection of disks in a pool to become a logical volume.</p>
+<h1 class="entry-title" itemprop="headline">Introduction to RAID, Concepts of RAID and RAID Levels – Part 1</h1>			<div class="entry-meta">
+<span class="byline"><span class="author vcard" itemtype="http://schema.org/Person" itemscope="itemscope" itemprop="author"><a href="https://www.tecmint.com/author/babinlonston/" title="View all posts by Babin Lonston" rel="author"><span class="author-name" itemprop="name">Babin Lonston</span></a></span></span><span class="posted-on"><time class="updated" datetime="2015-10-08T16:07:50+05:30" itemprop="dateModified">October 8, 2015</time><time class="entry-date published" datetime="2014-10-13T15:58:21+05:30" itemprop="datePublished">October 13, 2014</time> </span><span class="cat-links"><span class="screen-reader-text">Categories </span><a href="https://www.tecmint.com/category/raid/" rel="category tag">Raid</a></span> <span class="comments-link"><a href="https://www.tecmint.com/understanding-raid-setup-in-linux/#comments">21 Comments</a></span> 			</div><!-- .entry-meta -->
+<center style="padding-bottom:20px;padding-top:40px;">
+<!-- Tag ID: tecmint_leaderboard_article_top -->
+<div id="tecmint_leaderboard_article_top" align="center">
+<script data-cfasync="false" type="text/javascript">
+freestar.config.enabled_slots.push({ placementName: "tecmint_leaderboard_article_top", slotId: "tecmint_leaderboard_article_top" });
+</script>
+</div>
+</center>
+</header><!-- .entry-header -->
+<div class="entry-content" itemprop="text">
+<p><b>RAID</b> is a Redundant Array of Inexpensive disks, but nowadays it is called Redundant Array of Independent drives. Earlier it is used to be very costly to buy even a smaller size of disk, but nowadays we can buy a large size of disk with the same amount like before. Raid is just a collection of disks in a pool to become a logical volume.</p>
 <figure id="attachment_9223" aria-describedby="caption-attachment-9223" style="width: 590px" class="wp-caption aligncenter"><a href="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg"><img src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" class="size-full wp-image-9223" alt="RAID in Linux" style="" data-lazy-loaded="true" width="600" height="400"><noscript>&lt;img class="size-full wp-image-9223" src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" alt="RAID in Linux" width="600" height="400" /&gt;</noscript></a><figcaption id="caption-attachment-9223" class="wp-caption-text">Understanding RAID Setups in Linux</figcaption></figure>
 <p>Raid contains groups or sets or Arrays. A combine of drivers make a group of disks to form a RAID Array or RAID set. It can be a minimum of 2 number of disk connected to a raid controller and make a logical volume or more drives can be in a group. Only one Raid level can be applied in a group of disks. Raid are used when we need excellent performance. According to our selected raid level, performance will differ. Saving our data by fault tolerance &amp; high availability.</p>
 <p>This series will be titled Preparation for the setting up RAID ‘s through Parts 1-9 and covers the following topics.</p>
-[How to setup RAID0 (Stripe) in Linux](/RAID/raid0.md)
-How to setup RAID1 (Mirror) in Linux
-How to setup RAID5 (Striping with Distributed Parity) in LinuxHow to setup RAID6 (Striping with Double Distributed Parity) in Linux
-Setting Up RAID 10 or 1+0 (Nested) in Linux
-Growing an Existing RAID Array and Removing Failed Disks in Raid
-How to Recover Data and Rebuild Failed Software RAID’s
-How to Manage Software RAID’s in Linux with ‘Mdadm’ Tool
+<div id="exam_announcement"><b>Part 1</b>: <b>Introduction to RAID, Concepts of RAID and RAID Levels</b></div>
+<div id="exam_announcement"><b>Part 2</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid0-in-linux/" target="_blank">How to setup RAID0 (Stripe) in Linux</a></div>
+<div id="exam_announcement"><b>Part 3</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid1-in-linux/" target="_blank">How to setup RAID1 (Mirror) in Linux</a></div>
+<div id="exam_announcement"><b>Part 4</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-5-in-linux/" target="_blank">How to setup RAID5 (Striping with Distributed Parity) in Linux</a></div>
+<div id="exam_announcement"><b>Part 5</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-6-in-linux/" target="_blank">How to setup RAID6 (Striping with Double Distributed Parity) in Linux</a></div>
+<div id="exam_announcement"><b>Part 6</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-10-in-linux/" target="_blank">Setting Up RAID 10 or 1+0 (Nested) in Linux</a></div>
+<div id="exam_announcement"><b>Part 7</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/grow-raid-array-in-linux/" target="_blank">Growing an Existing RAID Array and Removing Failed Disks in Raid</a></div>
+<div id="exam_announcement"><b>Part 8</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/recover-data-and-rebuild-failed-software-raid/" target="_blank">How to Recover Data and Rebuild Failed Software RAID’s</a></div>
+<div id="exam_announcement"><b>Part 9</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/manage-software-raid-devices-in-linux-with-mdadm/" target="_blank">How to Manage Software RAID’s in Linux with ‘Mdadm’ Tool</a></div>
 <p>This is the Part 1 of a 9-tutorial series, here we will cover the introduction of RAID, Concepts of RAID and RAID Levels that are required for the setting up RAID in Linux.</p>
 <h3>Software RAID and Hardware RAID</h3>
 <p><b>Software RAID</b> have low performance, because of consuming resource from hosts. Raid software need to load for read data from software raid volumes. Before loading raid software, OS need to get boot to load the raid software. No need of Physical hardware in software raids. Zero cost investment.</p>
@@ -92,7 +104,3 @@ How to Manage Software RAID’s in Linux with ‘Mdadm’ Tool
 <li>Fault Tolerance.</li>
 <li>Fast rebuild from copying data.</li>
 <li>Can be used in Database storage for high performance and availability.</li>
-</ol>
-<h3>Conclusion</h3>
-<p>In this article we have seen what is RAID and which levels are mostly used in RAID in real environment. Hope you have learned the write-up about RAID. For RAID setup one must know about the basic Knowledge about RAID. The above content will fulfil basic understanding about RAID.</p>
-<p>In the next upcoming articles I’m going to cover how to setup and create a RAID using Various Levels, Growing a RAID Group (Array) and Troubleshooting with failed Drives and much more.</p>
