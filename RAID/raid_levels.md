@@ -1,22 +1,5 @@
 <h1 class="headline" itemprop="headline">RAID 2, RAID 3, RAID 4, RAID 6 Explained with Diagram</h1>
-					<div class="byline small">
-						<span class="post_author_intro">by</span> <span class="post_author" itemprop="author">Ramesh Natarajan</span>
-						<meta itemprop="datePublished" content="2011-11-21">
-						<meta itemprop="dateModified" content="2016-03-25">
-						<span class="post_date_intro">on</span> <span class="post_date" title="2011-11-21">November 21, 2011</span>
-					</div>
-				</div>
-<div style="margin:7px 0px 6px 0px; padding:5px;">
 
-<div style="float:left; padding:2px; width:90px"><iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.thegeekstuff.com%2F2011%2F11%2Fraid2-raid3-raid4-raid6%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" scrolling="no" style="border:none; overflow:hidden; width:450px; height:21px;" allowtransparency="true" frameborder="0"></iframe>
-</div>
-
-<div style="width=95px">
-<iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" allowfullscreen="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 73px; height: 20px;" title="Twitter Tweet Button" src="https://platform.twitter.com/widgets/tweet_button.d7fc2fc075c61f6fa34d79a0cbbf1e34.en.html#dnt=false&amp;id=twitter-widget-0&amp;lang=en&amp;original_referer=https%3A%2F%2Fwww.thegeekstuff.com%2F2011%2F11%2Fraid2-raid3-raid4-raid6%2F&amp;size=m&amp;text=RAID%202%2C%20RAID%203%2C%20RAID%204%2C%20RAID%206%20Explained%20with%20Diagram&amp;time=1657474871992&amp;type=share&amp;url=https%3A%2F%2Fwww.thegeekstuff.com%2F2011%2F11%2Fraid2-raid3-raid4-raid6%2F" frameborder="0"></iframe><script type="text/javascript" src="https://platform.twitter.com/widgets.js"></script>
-</div>
-
-</div>
-				<div class="post_content" itemprop="articleBody">
 <p>In most critical production servers, you will be using either <a href="https://www.thegeekstuff.com/2010/08/raid-levels-tutorial/">RAID 5</a> or <a href="https://www.thegeekstuff.com/2011/10/raid10-vs-raid01/">RAID 10</a>.</p>
 <p>However there are several non-standard raids, which are not used except in some rare situations. It is good to know what they are.</p>
 <p>This article explains with a simple diagram how RAID 2, RAID 3, RAID 4, and RAID 6 works.<br>
