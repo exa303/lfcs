@@ -4,7 +4,7 @@
 <figure id="attachment_9223" aria-describedby="caption-attachment-9223" style="width: 590px" class="wp-caption aligncenter"><a href="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg"><img src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" class="size-full wp-image-9223" alt="RAID in Linux" style="" data-lazy-loaded="true" width="600" height="400"><noscript>&lt;img class="size-full wp-image-9223" src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" alt="RAID in Linux" width="600" height="400" /&gt;</noscript></a><figcaption id="caption-attachment-9223" class="wp-caption-text">Understanding RAID Setups in Linux</figcaption></figure>
 <p>Raid contains groups or sets or Arrays. A combine of drivers make a group of disks to form a RAID Array or RAID set. It can be a minimum of 2 number of disk connected to a raid controller and make a logical volume or more drives can be in a group. Only one Raid level can be applied in a group of disks. Raid are used when we need excellent performance. According to our selected raid level, performance will differ. Saving our data by fault tolerance &amp; high availability.</p>
 <p>This series will be titled Preparation for the setting up RAID ‘s through Parts 1-9 and covers the following topics.</p>
-How to setup RAID0 (Stripe) in Linux
+[How to setup RAID0 (Stripe) in Linux](/RAID/raid0.md)
 How to setup RAID1 (Mirror) in Linux
 How to setup RAID5 (Striping with Distributed Parity) in LinuxHow to setup RAID6 (Striping with Double Distributed Parity) in Linux
 Setting Up RAID 10 or 1+0 (Nested) in Linux
