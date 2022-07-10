@@ -61,7 +61,7 @@
 * <s>Create and configure encrypted storage</s> [LUKS](/encrypted_storage.md) [L2](/luks2.md)
 * <s>Configure systems to mount file systems at or during boot</s> **fstab**
 * <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
-* Create and manage RAID devices [Raid](/raid.md)
+* Create and manage RAID devices [Raid](/RAID/raid.md) **SOURCE: www.tecmint.com**
 * Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 * Create, manage and diagnose advanced file system permissions
 * <s>Setup user and group disk quotas for filesystems</s> [Quota](/quota.md)
