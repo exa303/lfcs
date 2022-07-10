@@ -934,35 +934,3 @@ Transclusion expansion time report (%,ms,calls,template)
 	</div>
 
 
-</main>
-
-	</div> 
-</div> 
-
-<div class="mw-workspace-container mw-footer-container">
-	<div class="mw-content-container">
-		
-<footer id="footer" class="mw-footer" role="contentinfo" >
-	<ul id="footer-info">
-	<li id="footer-info-lastmod"> This page was last edited on 9 July 2022, at 14:01.</li>
-	<li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.3 or later</a> unless otherwise noted.</li>
-</ul>
-
-	<ul id="footer-places">
-	<li id="footer-places-privacy"><a href="https://terms.archlinux.org/docs/privacy-policy/" class="extiw" title="archlinux-service-agreements:privacy-policy">Privacy policy</a></li>
-	<li id="footer-places-about"><a href="/title/ArchWiki:About" title="ArchWiki:About">About ArchWiki</a></li>
-	<li id="footer-places-disclaimer"><a href="/title/ArchWiki:General_disclaimer" title="ArchWiki:General disclaimer">Disclaimers</a></li>
-</ul>
-
-	
-</footer>
-
-	</div>
-</div>
-	</div> 
-</div> 
-
-<script>(RLQ=window.RLQ||[]).push(function(){mw.config.set({"wgPageParseReport":{"limitreport":{"cputime":"0.130","walltime":"0.132","ppvisitednodes":{"value":1875,"limit":1000000},"postexpandincludesize":{"value":25660,"limit":2097152},"templateargumentsize":{"value":13518,"limit":2097152},"expansiondepth":{"value":7,"limit":100},"expensivefunctioncount":{"value":0,"limit":100},"unstrip-depth":{"value":0,"limit":20},"unstrip-size":{"value":323,"limit":5000000},"timingprofile":["100.00%   54.741      1 -total"," 20.15%   11.033    139 Template:Ic","  8.43%    4.614      7 Template:Tip","  8.21%    4.494      3 Template:Expansion","  8.12%    4.444      1 Template:Lowercase_title","  8.00%    4.382     29 Template:Hc","  6.02%    3.293      3 Template:Man","  5.74%    3.142      5 Template:Pkg","  4.54%    2.487      9 Template:Warning","  4.30%    2.355      3 Template:META_Message"]},"cachereport":{"timestamp":"20220709140133","ttl":86400,"transientcontent":false}}});mw.config.set({"wgBackendResponseTime":95});});</script>
-</body>
-<!-- Cached/compressed 20220709140409 -->
-</html>
