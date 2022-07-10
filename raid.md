@@ -1,1 +1,4 @@
-https://www.tecmint.com/creating-and-managing-raid-backups-in-linux/
+# Create and manage RAID devices
+[RAID Concepts](/raid_concepts.md)
+
+
