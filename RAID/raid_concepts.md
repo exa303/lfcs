@@ -4,15 +4,13 @@
 <figure id="attachment_9223" aria-describedby="caption-attachment-9223" style="width: 590px" class="wp-caption aligncenter"><a href="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg"><img src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" class="size-full wp-image-9223" alt="RAID in Linux" style="" data-lazy-loaded="true" width="600" height="400"><noscript>&lt;img class="size-full wp-image-9223" src="https://www.tecmint.com/wp-content/uploads/2014/10/RAID.jpg" alt="RAID in Linux" width="600" height="400" /&gt;</noscript></a><figcaption id="caption-attachment-9223" class="wp-caption-text">Understanding RAID Setups in Linux</figcaption></figure>
 <p>Raid contains groups or sets or Arrays. A combine of drivers make a group of disks to form a RAID Array or RAID set. It can be a minimum of 2 number of disk connected to a raid controller and make a logical volume or more drives can be in a group. Only one Raid level can be applied in a group of disks. Raid are used when we need excellent performance. According to our selected raid level, performance will differ. Saving our data by fault tolerance &amp; high availability.</p>
 <p>This series will be titled Preparation for the setting up RAID ‘s through Parts 1-9 and covers the following topics.</p>
-<div id="exam_announcement"><b>Part 1</b>: <b>Introduction to RAID, Concepts of RAID and RAID Levels</b></div>
-<div id="exam_announcement"><b>Part 2</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid0-in-linux/" target="_blank">How to setup RAID0 (Stripe) in Linux</a></div>
-<div id="exam_announcement"><b>Part 3</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid1-in-linux/" target="_blank">How to setup RAID1 (Mirror) in Linux</a></div>
-<div id="exam_announcement"><b>Part 4</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-5-in-linux/" target="_blank">How to setup RAID5 (Striping with Distributed Parity) in Linux</a></div>
-<div id="exam_announcement"><b>Part 5</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-6-in-linux/" target="_blank">How to setup RAID6 (Striping with Double Distributed Parity) in Linux</a></div>
-<div id="exam_announcement"><b>Part 6</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/create-raid-10-in-linux/" target="_blank">Setting Up RAID 10 or 1+0 (Nested) in Linux</a></div>
-<div id="exam_announcement"><b>Part 7</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/grow-raid-array-in-linux/" target="_blank">Growing an Existing RAID Array and Removing Failed Disks in Raid</a></div>
-<div id="exam_announcement"><b>Part 8</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/recover-data-and-rebuild-failed-software-raid/" target="_blank">How to Recover Data and Rebuild Failed Software RAID’s</a></div>
-<div id="exam_announcement"><b>Part 9</b>: <a style="text-decoration: none;" href="https://www.tecmint.com/manage-software-raid-devices-in-linux-with-mdadm/" target="_blank">How to Manage Software RAID’s in Linux with ‘Mdadm’ Tool</a></div>
+How to setup RAID0 (Stripe) in Linux
+How to setup RAID1 (Mirror) in Linux
+How to setup RAID5 (Striping with Distributed Parity) in LinuxHow to setup RAID6 (Striping with Double Distributed Parity) in Linux
+Setting Up RAID 10 or 1+0 (Nested) in Linux
+Growing an Existing RAID Array and Removing Failed Disks in Raid
+How to Recover Data and Rebuild Failed Software RAID’s
+How to Manage Software RAID’s in Linux with ‘Mdadm’ Tool
 <p>This is the Part 1 of a 9-tutorial series, here we will cover the introduction of RAID, Concepts of RAID and RAID Levels that are required for the setting up RAID in Linux.</p>
 <h3>Software RAID and Hardware RAID</h3>
 <p><b>Software RAID</b> have low performance, because of consuming resource from hosts. Raid software need to load for read data from software raid volumes. Before loading raid software, OS need to get boot to load the raid software. No need of Physical hardware in software raids. Zero cost investment.</p>
