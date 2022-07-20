@@ -20,5 +20,5 @@
  	* `curl -o filename.txt https://reqbin.com/echo`
 
  * HTTPS requests:
- 	* When sending a request to an HTTPS URL, Curl verifies the SSL certificate of the target URL against the local CA certificate store. For expired and self-signed certificates, Curl returns Certificate Verify Failed error message. To bypass certificate checking, pass -k or --insecure command-line switch to Curl. Click Run to execute the Curl HTTPS request online and see the results. 
+ 	When sending a request to an HTTPS URL, Curl verifies the SSL certificate of the target URL against the local CA certificate store. For expired and self-signed certificates, Curl returns Certificate Verify Failed error message. To bypass certificate checking, pass -k or --insecure command-line switch to Curl. Click Run to execute the Curl HTTPS request online and see the results. 
  	* `curl -k https://expired.badssl.com`
