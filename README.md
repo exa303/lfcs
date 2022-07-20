@@ -5,9 +5,10 @@ START by klicking on [topics.md](/topics.md)
 
 ---
 
-## Utilities
+## Utilities / tools
 * [dd](/command_line_utilities/dd.md)
 * [fdisk](/command_line_utilities/fdisk.md)
+* [nmap](/Nmap-Cheatsheet/)
 
 
 ## Additional Notes 
@@ -15,6 +16,7 @@ START by klicking on [topics.md](/topics.md)
 * [Bash Scripting](/bash_scripting.md)
 * [AWK](/awk/)
 * [SED](/sed.md) **TBD**
+
 
 
 ## References
