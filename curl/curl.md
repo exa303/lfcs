@@ -9,4 +9,9 @@
 	* `curl -X POST https://reqbin.com/echo/post/json 
    -H "Content-Type: application/json"
    -d '{"productId": 123456, "quantity": 100}'  `
-   
+
+ * Add multiple headers 
+ 	`curl https://reqbin.com/echo/get/json
+   -H "X-Custom-Header: value"
+   -H "Content-Type: application/json"
+     `
