@@ -1,0 +1,14 @@
+HTTP/2 403 
+date: Wed, 20 Jul 2022 18:52:37 GMT
+content-type: text/html; charset=UTF-8
+cf-chl-bypass: 1
+permissions-policy: accelerometer=(),autoplay=(),camera=(),clipboard-read=(),clipboard-write=(),fullscreen=(),geolocation=(),gyroscope=(),hid=(),interest-cohort=(),magnetometer=(),microphone=(),payment=(),publickey-credentials-get=(),screen-wake-lock=(),serial=(),sync-xhr=(),usb=()
+cache-control: private, max-age=0, no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+expires: Thu, 01 Jan 1970 00:00:01 GMT
+x-frame-options: SAMEORIGIN
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=0HOUUDhMP4qVcSpYXFG6D27qn8vwdLQS%2BESrkfbnuSz4eAFvVXswXX8n0MN%2FeAS8Ojajgf%2FDxIlfs1J4hQML1p3hmuI%2Bv4R%2FHOp8ULUXPsktKV8B9uCfWerDVfx2Cup%2FazrvCBCXHAA%3D"}],"group":"cf-nel","max_age":604800}
+nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+server: cloudflare
+cf-ray: 72dde5204f3576d5-LHR
+
