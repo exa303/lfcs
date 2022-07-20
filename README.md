@@ -9,6 +9,7 @@ START by klicking on [topics.md](/topics.md)
 * [dd](/command_line_utilities/dd.md)
 * [fdisk](/command_line_utilities/fdisk.md)
 * [nmap](/nmap/nmap.md). Source: https://github.com/jasonniebauer/Nmap-Cheatsheet#basic-scanning-techniques
+* [curl](/curl/curl.md)
 
 
 ## Additional Notes 
