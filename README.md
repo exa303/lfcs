@@ -3,6 +3,9 @@
 Notes are related to all of the topics to egzam and study program that is published on theyr website. Additionaly I will add some of my own topics and notes to them.
 START by klicking on [topics.md](/topics.md)
 
+## Additional system administration topics 
+[Topics2](/topics2.md)
+
 ---
 
 ## Utilities / tools
@@ -10,7 +13,7 @@ START by klicking on [topics.md](/topics.md)
 * [fdisk](/command_line_utilities/fdisk.md)
 * [nmap](/nmap/nmap.md). Source: https://github.com/jasonniebauer/Nmap-Cheatsheet#basic-scanning-techniques
 * [curl](/curl/curl.md)
-
+* [ps](/command_line_utilities/ps.md)
 
 ## Additional Notes 
 
