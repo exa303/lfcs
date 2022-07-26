@@ -29,6 +29,11 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 
 * `iptables -I INPUT -p tcp --dport 80 -s 177.535.33.123 -j ACCEPT` : it will accept tcp requests to port 80 only from ip 177.535.33.123 (assuming you still have previous rule active). 
 
+## Save Load configuration
+
+* `iptables-save > savedrules.txt` - save rules to file.
+* `iptables-restore < savedrules.txt ` - load rules from a file.
+
 
 ## Other commands
 
@@ -37,12 +42,15 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 * `iptables --flush` - flushes all the rules. or `-F`
 * `iptables -L --line-numbers` - shows rules with line numbers.
 * `iptables -D INPUT 1` - delete 1 rule from INPUT chain.
+* `sudo iptables -L OUTPUT` - list OUTPUT chain only
 
 ---
 
 * `iptables -A INPUT --protocol icmp --in-interface enp0s3 -j DROP`: this will block incomming pings to the network interface on this server. 
 
 * `iptables -I OUTPUT -s <ip adress> -j REJECT`
+
+
 
 
 
