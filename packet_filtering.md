@@ -51,7 +51,8 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 * `iptables -I OUTPUT -s <ip adress> -j REJECT`
 
 
-
+## References
+* https://www.cyberciti.biz/tips/linux-iptables-examples.html
 
 
 
