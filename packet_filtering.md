@@ -12,7 +12,10 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 	* `-I` - insert new rule.
 	* `INPUT` - this is chain. There are 3 chains `INPUT` `OUTPUT` `FORWARD`
 	* `-s` - trafic from Source 
-	* `-j` - target DROP, there can be `ACCEPT` `REJECT` `DROP`
+	* `-j` - target, there can be `ACCEPT` `REJECT` `DROP` targets for the chain.
+	* `-o` - output Interface name
+	* `-i` - input interface
+	* `-p` - protocol.
 
 
 ## Subnets 
@@ -21,8 +24,8 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 
 ## Ports
 * `iptables -I INPUT -p tcp --dport 80 -j DROP`: this will drop ALL trafic comming to port 80.
-	* `-p` - protocol.
-	* `--dport` - destination protocol. 
+
+	* `--dport` - destination port. 
 
 * `iptables -I INPUT -p tcp --dport 80 -s 177.535.33.123 -j ACCEPT` : it will accept tcp requests to port 80 only from ip 177.535.33.123 (assuming you still have previous rule active). 
 
@@ -40,5 +43,7 @@ Rules in iptables can be appended or inserted. They are processed from top to th
 * `iptables -A INPUT --protocol icmp --in-interface enp0s3 -j DROP`: this will block incomming pings to the network interface on this server. 
 
 * `iptables -I OUTPUT -s <ip adress> -j REJECT`
+
+
 
 
