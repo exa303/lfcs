@@ -59,6 +59,12 @@ echo "hello $name"
 
 ### OTHER:
 
+= and == are for string comparisons
+-eq is for numeric comparisons
+-eq is in the same family as -lt, -le, -gt, -ge, and -ne
+
+== is specific to bash (not present in sh (Bourne shell), ...). Using POSIX = is preferred for compatibility. In bash the two are equivalent, and in sh = is the only one that will work.
+
 * `command && command && command` - Using one & (ampersand) to run commands simultaneously
 
 * `$$` - is the process ID (PID) of the script itself. $BASHPID is the process ID of the current instance of Bash.
