@@ -41,4 +41,6 @@ It is executed like this: cmd result1 result2 … result N.
 * `find ./ -type f -exec bash -c ‘ls -lrt {}’ \;` - combine find exec with shell script function.
 * `find / -type f -ls -user avx` - list files with inode number (at firs field), permissions, size.
 
+* `find . -type f -newer <specific file>` - this will find ewery other file which is newer then specific file
+
 
