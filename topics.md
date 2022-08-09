@@ -28,7 +28,7 @@
 * <s>Identify the component of a Linux distribution that a file belongs to</s> [Here](/identify_which_file_belongs_to.md) **TBC**
 * Systemd - [here](/systemd.md) **TBC**
 ---
-* <s>Create, delete, and modify local user accounts</s>
+* Create, delete, and modify local user accounts [Here](/user_administration.md)
 * <s>Create, delete, and modify local groups and group memberships</s>
 * <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
 * <s>Manage template user environment</s> [Read](/template_usr_env.md) **TBC**
