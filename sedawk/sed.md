@@ -31,3 +31,16 @@ s/ VA/, Virginia/
 
 ```
 then run a script file against dataset -> `sed -f nameState text3.txt`
+
+
+
+## Deleting
+
+* `d` - delete all
+* `1d` - delete first line
+* `$d` - delete last line
+* `/^$/d` - deleted all newlines
+* `sed '2,$d'` - delete ewerything from line 2 to the last line, if you want to delete ewerything from first line just type 1 , `^` doesn't work.
+* `1,/ˆ$/d` - This example deletes from the first line up to the first blank line, which, for instance, will delete a mailer header from an Internet mail message that you have saved in a file. 
+* `sed '/text1/,/text2/d' ` - deletes from one address to another. 
+* `sed '1d; $d;'` - deletes first and last lines.

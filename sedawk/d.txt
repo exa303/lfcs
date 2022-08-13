@@ -1,0 +1,6 @@
+Header
+this is Linux kernel
+this is Linux operating system
+
+this is sentace after newline
+Trailer

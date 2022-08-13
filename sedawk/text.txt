@@ -1,5 +1,0 @@
-Linux is the best operatng system. 
-Linux is free and opne source.
-Linux is actualy not a full operating system, Linux is a OS kernel. It is different then Windows
-Android on the other hand is FULL os built on top of the kerlen.
-
