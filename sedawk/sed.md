@@ -44,3 +44,17 @@ then run a script file against dataset -> `sed -f nameState text3.txt`
 * `1,/ˆ$/d` - This example deletes from the first line up to the first blank line, which, for instance, will delete a mailer header from an Internet mail message that you have saved in a file. 
 * `sed '/text1/,/text2/d' ` - deletes from one address to another. 
 * `sed '1d; $d;'` - deletes first and last lines.
+* `cat d.txt | sed -n 's/Linux/Android/p'` - when `-n` flag specified it only prints using `p` directive. 
+
+## Substitution
+* `[ address ]s/ pattern / replacement / flags`
+where the flags that modify the substitution are:
+* `n` A number (1 to 512) indicating that a replacement should be made for only
+the n th occurrence of the patter n.
+* `g` Make changes globally on all occurrences in the pattern space. Normally only
+the first occurrence is replaced.
+* `p` Print the contents of the pattern space.
+* `w` file
+Write the contents of the pattern space to file.
+
+* extract filename from `home/root/dir/file.txt` pathname. `sed 's/.*\///'`

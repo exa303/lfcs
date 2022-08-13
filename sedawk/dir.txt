@@ -1,0 +1,1 @@
+/home/root/dir/file.txt
