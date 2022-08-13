@@ -21,6 +21,7 @@ START by klicking on [topics.md](/topics.md)
 * [Bash Scripting](/bash_scripting.md)
 * [AWK](/awk/)
 * [SED](/sedawk/sed.md)
+* [REGEX](/regex/regex.md)
 
 
 
