@@ -45,3 +45,10 @@ sist of numbers have a numeric value of 0.) Variables do not have to be initiali
 
 ## System variables
 
+* `NF` - number of fields
+* `RS` - record separator (by default new line)
+* `NR` - number of rows 
+* `FILENAME` - contains the name of the current input file.
+* `FNR` - multiple input files are used as it provides the number of the current record relative to the current input file.
+    * Typically, the field and record separators are defined in the BEGIN pr ocedure because you want these values set before the first input line is read. However, you can redefine these values anywhere in the script. In POSIX awk, assigning a new value to FS has no effect on the current input line; it only affects the next input line.
+
