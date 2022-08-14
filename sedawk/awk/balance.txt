@@ -1,0 +1,6 @@
+1000;
+125;Market;-125.45
+126;Hardware Store;-34.95
+127;Video Store;-20.00
+128;Car;-100.00
+
