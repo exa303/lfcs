@@ -45,6 +45,8 @@ then run a script file against dataset -> `sed -f nameState text3.txt`
 * `sed '/text1/,/text2/d' ` - deletes from one address to another. 
 * `sed '1d; $d;'` - deletes first and last lines.
 * `cat d.txt | sed -n 's/Linux/Android/p'` - when `-n` flag specified it only prints using `p` directive. 
+* `/ˆ\*\**\*$/d` - This command deletes entire lines of asterisks anywhere they occur in the file.
+
 
 ## Substitution
 * `[ address ]s/ pattern / replacement / flags`
@@ -57,4 +59,78 @@ the first occurrence is replaced.
 * `w` file
 Write the contents of the pattern space to file.
 
+* `s/•/>/2` - will change second tab to a `>`.
+* `sed 's/Linux/(&)/'` - the output is going to be `(Linux)`. `&` The ampersand makes it possible to refer ence the entire match in the replacement string.
+* Select strings/regex's using `()` and recall them later in substitution using using `\n` where n is up to 9 saves. 
+    ``` bash
+    $ cat test1
+    first:second
+    one:two
+    $ sed ’s/\(.*\):\(.*\)/\2:\1/’ test1
+    second:first
+    two:one
+    ```
+
 * extract filename from `home/root/dir/file.txt` pathname. `sed 's/.*\///'`
+* `$ sed -e 's/\(.*\)/\L\1/' input.txt > output.txt` - Converts upper to lower case 
+* `$ sed -e 's/\(.*\)/\U\1/' input.txt > output.txt` - Converts lower to upper case
+
+## Comments
+* `# wstar.sed: convert WordStar files` - comments using `#`
+
+## Append, Insert, and Change
+
+
+The append (a), insert (i), and change (c) commands, The syntax follows:
+* append [ line-address ]a\ text  - `sed '/Linux/a\androd'` - The append and insert commands can be applied only to a single line address, not a range of lines.
+
+
+* insert [ line-address ]i\ Vtext - `sed '/Linux/i\androd'`
+* change [ address ]c\ text - `sed '/Linux/c\androd'` - `/ˆFrom /,/ˆ$/c\<Mail Header Removed>`- From until it reaches empty line.
+    ```bash
+        cat change.txt | sed '/^\.sp/c\\.sp 14'
+        .sp 14
+        .sp 14
+        .sp 14
+        .sp 14
+        .sp 14
+        .sp 14
+        1.5
+        1
+        1.5v
+        .3v
+        3
+
+    ```
+## = line number 
+* `cat file.c | sed -n '/if/='` - returns line numbers of if statements
+
+## Hold Space
+
+* Hold h or H - Copy or append contents of pattern space to hold space. 
+* Get g or G - Copy or append contents of hold space to pattern space.
+* Exchange - Swap contents of hold space and pattern space.
+
+    ```bash
+    1
+    2
+    11
+    22
+    111
+    222
+
+    script file:
+    # Reverse flip
+    /1/{
+    h
+    d
+    }
+    /2/{
+    G
+    }
+
+    ```
+
+
+
+
