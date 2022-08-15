@@ -367,6 +367,49 @@ appearing in a glossary entry would be matched. Note that the placement of this
 rule in the sequence of rules is significant. It must appear before rules #3 and #4
 because these rules will match anything, including the words “quit” and “exit.”
 
+## split()
+
+```bash
+z = split($1, array, " ")
+for (i = 1; i <= z; ++i)
+print i, array[i]
+
+```
+
+* z contains the number of elements in the array.
+
+```bash
+awk ’
+# date-month -- convert mm/dd/yy or mm-dd-yy to month day, year
+# build list of months and put in array.
+BEGIN {
+# the 3-step assignment is done for printing in book
+listmonths = "January,February,March,April,May,June,"
+listmonths = listmonths "July,August,September,"
+listmonths = listmonths "October,November,December"
+split(listmonths, month, ",")
+}
+# check that there is input
+$1 != "" {
+# split on "/" the first input field into elements of array
+sizeOfArray = split($1, date, "/")
+# check that only one field is returned
+if (sizeOfArray == 1)
+# try to split on "-"
+sizeOfArray = split($1, date, "-")
+# must be invalid
+if (sizeOfArray == 1)
+exit
+# add 0 to number of month to coerce numeric type
+date[1] += 0
+# print month day, year
+print month[date[1]], (date[2] ", 19" date[3])
+}’
+```
+* Following along on the same idea, here’s a script that converts dates in the form “mm-dd-yy” or “mm/dd/yy” to “month day, year.” `$ echo "5/11/55" | date-month.awk       returns: May 11, 1955`
+
+##  Deleting Elements of an Array
+* `delete array [ subscript ]`
 
 
 ## Factorial example:
@@ -400,6 +443,116 @@ exit
 
 
 
+## System Variables That Are Arrays
+
+Awk provides two system variables that are arrays:
+* ARGV
+    * An array of command-line arguments, excluding the script itself and any
+options specified with the invocation of awk. The number of elements in this
+array is available in ARGC. The index of the first element of the array is 0
+(unlike all other arrays in awk but consistent with C) and the last is ARGC - 1.
+* ENVIRON
+    * An array of environment variables. Each element of the array is the value in
+the current environment and the index is the name of the environment vari-
+able.
+
+* You can write a loop to refer ence all the elements of the ARGV array.
+```bash 
+# argv.awk - print command-line parameters
+BEGIN { for (x = 0; x < ARGC; ++x)
+print ARGV[x]
+print ARGC
+}
+```
+
+
+Remember that if you invoke awk from a shell script, the command-line parame-
+ters are passed to the shell script and not to awk. You have to pass the shell
+script’s command-line parameters to the awk program inside the shell script. For
+instance, you can pass all command-line parameters from the shell script to awk,
+using “$*”. Look at the following shell script:
+
+```bash
+awk ’
+# argv.sh - print command-line parameters
+BEGIN {
+for (x = 0; x < ARGC; ++x)
+print ARGV[x]
+print ARGC
+}’ $*
+
+
+
+# number.awk - test command-line parameters
+BEGIN {
+for (x = 1; x < ARGC; ++x)
+if ( ARGV[x] ! ̃ /ˆ[0-9]+$/ ) {
+print ARGV[x], "is not an integer."
+exit 1
+}
+}
+
+
+```
+
+## An Array of Environment Variables
+
+```bash
+# environ.awk - print environment variable
+BEGIN {
+for (env in ENVIRON)
+print env "=" ENVIRON[env]
+}
+
+
+## output
+
+DISPLAY=scribe:0.0
+FRAME=Shell 3
+LOGNAME=dale
+MAIL=/usr/mail/dale
+PATH=:/bin:/usr/bin:/usr/ucb:/work/bin:/mac/bin:.
+TERM=mac2cs
+HOME=/work/dale
+SHELL=/bin/csh
+TZ=PST8PDT
+EDITOR=/usr/bin/vi
+
+```
+
+# Functions
+
+* `int(x)` Returns truncated value of `x`.
+* `srand(x)` - Establishes new seed for rand( ). If no seed is specified, uses time of day. Returns the old seed.
+* `split(s,a,sep)` - Parses strings into elements of array a using field separator sep; returns number of elements. If sep is not supplied, FS is used. Array
+splitting works the same way as field splitting.
+* `index(s,t)` - Returns position of substring t in string s or zero if not present.
+* `length(s)` - Returns length of string s or length of $0 if no string is supplied.
+* `tolower(s)` - Translates all uppercase characters in string s to lowercase and returns the new string.
+* toupper(s) - Translates all lowercase characters in string s to uppercase and returns the new string.
+* match( ) - match("the UNIX operating system", /[A-Z]+/) - The value retur ned by this function is 5, the character position of “U,” the first capital letter in the string.
+ 
+## Random Number Generation
+
+The rand( ) function generates a pseudo-random floating-point number between 0
+and 1. The srand( ) function sets the seed or starting point for random number
+generation. If srand( ) is called without an argument, it uses the time of day to gen-
+erate the seed. With an argument x, srand( ) uses x as the seed. 
+
+## User functions
+
+* A function definition can be placed anywhere in a script that a pattern-action rule
+can appear. Typically, we put the function definitions at the top of the script
+befor e the pattern-action rules. A function is defined using the following syntax:
+
+``` bash
+function name (parameter-list) {
+statements
+}
+
+```
+variables defined in the body of the function are global variables, by
+default.
 
 
 
