@@ -225,34 +225,34 @@ No      Item_Name               Price           Quantity
 ````
 * Consider running the following command that will flag food items whose quantity is less than or equal to 20 with a (*) sign at the end of each line:
 
-    ```bash
-     awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; } $4 > 20 { print $0 ;} ' food_list.txt 
+```bash
+ awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; } $4 > 20 { print $0 ;} ' food_list.txt 
 
-    No  Item_Name       Price       Quantity
-    1   Mangoes         $3.45          5    *
-    2   Apples          $2.45              25
-    3   Pineapples      $4.45              55
-    4   Tomatoes        $3.45              25 
-    5   Onions          $1.45              15 *
-    6   Bananas         $3.45              30
-    ```
+No  Item_Name       Price       Quantity
+1   Mangoes         $3.45          5    *
+2   Apples          $2.45              25
+3   Pineapples      $4.45              55
+4   Tomatoes        $3.45              25 
+5   Onions          $1.45              15 *
+6   Bananas         $3.45              30
+```
 * But there is one problem here, when the first expression is executed, a line that we want to flag is printed using: { printf "%s\t%s\n", $0,"**" ; } and then in the same step, the second expression is also checked which becomes a time wasting factor.
 
 So there is no need to execute the second expression, $4 > 20 again after printing already flagged lines that have been printed using the first expression.
 To deal with this problem, you have to use the next command as follows:
     
-    ```bash
-         awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; next; } $4 > 20 { print $0 ;} ' food_list.txt
+```bash
+awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; next; } $4 > 20 { print $0 ;} ' food_list.txt
 
-    No  Item_Name       Price       Quantity
-    1   Mangoes         $3.45          5    *
-    2   Apples          $2.45              25
-    3   Pineapples      $4.45              55
-    4   Tomatoes        $3.45              25 
-    5   Onions          $1.45              15   *
-    6   Bananas                 $3.45              30
+No  Item_Name       Price       Quantity
+1   Mangoes         $3.45          5    *
+2   Apples          $2.45              25
+3   Pineapples      $4.45              55
+4   Tomatoes        $3.45              25 
+5   Onions          $1.45              15   *
+6   Bananas                 $3.45              30
 
-    ```
+```
 * After a single input line is printed using $4 <= 20 { printf "%s\t%s\n", $0,"*" ; next ; }, the next command included will help skip the second expression $4 > 20 { print $0 ;}, so execution goes to the next input line without having to waste time on checking whether the quantity is greater than 20.
 
 
