@@ -240,6 +240,7 @@ No      Item_Name               Price           Quantity
 
 So there is no need to execute the second expression, $4 > 20 again after printing already flagged lines that have been printed using the first expression.
 To deal with this problem, you have to use the next command as follows:
+    
     ```bash
          awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; next; } $4 > 20 { print $0 ;} ' food_list.txt
 
@@ -253,6 +254,22 @@ To deal with this problem, you have to use the next command as follows:
 
     ```
 * After a single input line is printed using $4 <= 20 { printf "%s\t%s\n", $0,"*" ; next ; }, the next command included will help skip the second expression $4 > 20 { print $0 ;}, so execution goes to the next input line without having to waste time on checking whether the quantity is greater than 20.
+
+
+
+## exit
+* An exit statement can take an expression as an argument. The value of this expr ession will be retur ned as the exit status of awk. If the expression is not supplied, the exit status is 0. If you supply a value to an initial exit statement, and then call exit again from the END rule without a value, the first value is used. For example:
+
+```bash
+awk ’{
+...
+exit 5
+}
+END { exit }’
+Her e, the exit status from awk will be 5.
+
+```
+
 
 ## Factorial example:
 
