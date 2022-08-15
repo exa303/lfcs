@@ -258,7 +258,7 @@ No  Item_Name       Price       Quantity
 
 
 ## exit
-* An exit statement can take an expression as an argument. The value of this expr ession will be retur ned as the exit status of awk. If the expression is not supplied, the exit status is 0. If you supply a value to an initial exit statement, and then call exit again from the END rule without a value, the first value is used. For example:
+* An exit statement can take an expression as an argument. The value of this expression will be returned as the exit status of awk. If the expression is not supplied, the exit status is 0. If you supply a value to an initial exit statement, and then call exit again from the END rule without a value, the first value is used. For example:
 
 ```bash
 awk ’{
@@ -269,6 +269,27 @@ END { exit }’
 Her e, the exit status from awk will be 5.
 
 ```
+## Arrays
+
+* `flavor[1] = "cherry"` - syntax.
+* `print flavor[1]` - get the value.
+
+```bash
+flavor_count = 5
+for (x = 1; x <= flavor_count; ++x)
+print flavor[x]
+```
+
+* In awk, all arrays are associative arrays. What makes an associative array unique is that its index can be a string or a number `acro["BASIC"]`.
+
+### There is a special looping syntax for accessing all the elements of an associative array. It is a version of the for loop.
+
+```bash
+for ( item in acro )
+print item, acro[item]
+```
+
+
 
 
 ## Factorial example:
@@ -298,8 +319,6 @@ exit
 # if not a number, prompt again.
 { printf(" \nInvalid entry. Enter a number: ")
 }’ -
-
-
 ````
 
 
