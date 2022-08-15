@@ -334,7 +334,38 @@ print $0 " not found"
 printf("Enter another glossary term (q to quit): ")
 }’ glossary -
 ```
-
+This program reads a series of glossary entries from a file named glossary and puts them into an array. The user is prompted to enter a glossary term and if it is found, the definition of the term is printed.
+The pattern-matching rules are number ed to make this discussion easier. As we
+look at the individual rules, we’ll discuss them in the order in which they are
+encounter ed in the flow of the script. Rule #0 is the BEGIN rule, which is per-
+for med only once before any input is read. It sets FS and OFS to a tab and then
+pr ompts the user to enter a glossary item. The response will come from standard
+input, but that is read after the glossary file.
+Rule #1 tests to see if the current filename (the value of FILENAME) is “glossary”
+and is therefor e only applied while reading input from this file. This rule loads the
+glossary entries into an array:
+entry[term] = definition
+wher e $1 is the term and $2 is the definition. The next statement at the end of rule
+#1 is used to skip other rules in the script and causes a new line of input to be
+read. So, until all the entries in the glossary file are read, no other rule is evalu-
+ated.
+Once input from glossary is exhausted, awk reads from standard input because “-”
+is specified on the command line. Standard input is where the user’s response
+comes from. Rule #3 tests that the input line ($0) is not empty. This rule should
+match whatever the user types. The action uses in to see if the input line is an
+index in the array. If it is, it simply prints out the corresponding value. Otherwise,
+we tell the user that no valid entry was found.
+After rule #3, rule #4 will be evaluated. This rule simply prompts the user for
+another entry. Note that regardless of whether a valid entry was processed in rule
+#3, rule #4 is executed. The prompt also tells the user how to quit the program.
+After this rule, awk looks for the next line of input.
+If the user chooses to quit by entering “q” as the next line of input, rule #2 will be
+matched. The pattern looks for a complete line consisting of alternative words or
+single letters that the user might enter to quit. The “ˆ” and “$” are important, signi-
+fying that the input line contains no other characters but these; otherwise a “q”
+appearing in a glossary entry would be matched. Note that the placement of this
+rule in the sequence of rules is significant. It must appear before rules #3 and #4
+because these rules will match anything, including the words “quit” and “exit.”
 
 
 
