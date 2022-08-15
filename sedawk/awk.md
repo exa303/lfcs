@@ -290,6 +290,18 @@ print item, acro[item]
 ```
 
 
+## Testing for Membership in an Array
+
+
+* The keyword in is also an operator that can be used in a conditional expression to test that a subscript is a member of an array. 
+
+```bash
+if ( "BASIC" in acro )
+print "Found BASIC"
+```
+* This is true if “BASIC” is a subscript used to access an element of acro. This syntax cannot tell you whether “BASIC” is the value of an element of acro. This expression is the same as writing a loop to check that such a subscript exists, although the above expression is much easier to write, and much more efficient to execute.
+
+
 
 
 ## Factorial example:
