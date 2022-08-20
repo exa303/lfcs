@@ -299,7 +299,7 @@ Here, the exit status from awk will be 5.
 * `flavor[1] = "cherry"` - syntax.
 * `print flavor[1]` - get the value.
 * `if (arr[$1] < 1)` - check if associative array with index $1 stores any value.
-* Appending to arrays [append](/sedawk/examples/awkexamples.md#6. Append to array)
+* Appending to arrays [append](/sedawk/examples/awkexamples.md#6.Append)
 
 ```bash
 flavor_count = 5
