@@ -159,6 +159,121 @@ jobx - 5
 
 ```
 
+## 5. each `{}` executes on each line seperately if the is no condition. Loading array
+
+Data: 
+
+```bash
+Name;Age;
+Jim;22;
+Johny;35;
+Tim;41;
+Diego;44;
+Tony;18;
+
+```
+Script:
+
+```bash
+#!/usr/bin/awk -f
+
+BEGIN { print "Starting script...", FS = ";"}
+
+{
+        arr[NR] = $1; # this is how to load all results in to array
+        }
+
+NR > 1 {
+        print arr[NR]
+        }
+
+
+END {
+        print "Finished with data from:" FILENAME
+        print "Number of rows processed:" NR 
+        }
+
+```
+Output:
+
+```bash
+Starting script... ;
+Jim
+Johny
+Tim
+Diego
+Tony
+
+Finished with data from:data.txt
+Number of rows processed:7
+
+```
+
+
+## 6. Append to array
+
+
+Data: 
+
+```bash
+Name;Age;
+Jim;22;
+Johny;35;
+Tim;41;
+Diego;44;
+Tony;18;
+
+```
+Script:
+
+```bash
+#!/usr/bin/awk -f
+
+function append(Arr,Data){
+        newArr = Arr[length(Arr)+1] = Data
+        return newArr
+        }
+
+BEGIN { print "Starting script...", FS = ";"}
+
+{
+        arr[NR] = $1;
+        }
+
+{
+        append(arr,"A-p-p-e-n-d-e-d")
+
+        }
+
+NR > 1 {
+        print arr[NR]
+        }
+
+
+
+END {
+        print "Finished with data from:" FILENAME
+        print "Number of rows processed:" NR 
+        print arr[NR+1]
+        exit 1
+        }
+
+```
+Output:
+
+```bash
+Starting script... ;
+Jim
+Johny
+Tim
+Diego
+Tony
+
+Finished with data from:data.txt
+Number of rows processed:7
+A-p-p-e-n-d-e-d
+
+```
 
 ---
 
