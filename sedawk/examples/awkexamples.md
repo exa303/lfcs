@@ -58,7 +58,7 @@ Kathy earned: 40
 Mark earned: 100
 Mary earned: Nothing
 ```
-## 3 
+## 3 Calculating averages
 
 Data: 
 
