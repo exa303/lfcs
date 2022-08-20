@@ -558,7 +558,7 @@ splitting works the same way as field splitting.
 * `length(s)` - Returns length of string s or length of $0 if no string is supplied.
 * `tolower(s)` - Translates all uppercase characters in string s to lowercase and returns the new string.
 * `toupper(s)` - Translates all lowercase characters in string s to uppercase and returns the new string.
-* `match( )` - match("the UNIX operating system", /[A-Z]+/) - The value retur ned by this function is 5, the character position of “U,” the first capital letter in the string.
+* `match( )` - match("the UNIX operating system", /[A-Z]+/) - The value returned by this function is 5, the character position of “U,” the first capital letter in the string.
  
 ## Random Number Generation
 
