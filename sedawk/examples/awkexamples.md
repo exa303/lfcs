@@ -97,6 +97,68 @@ John Grade avg: 5.75
 Joe Grade avg: 4.00
 ```
 
+## Summation algorythm 
+
+Data: 
+
+```bash
+JOB NAME;TIME;
+test;100
+job1;5;
+job2;10
+job3;20;
+job1;5;
+job2;10;
+job3;20;
+jobx;5
+test;100
+
+
+```
+Script:
+
+```bash
+#!/usr/bin/awk -f
+
+BEGIN { FS = ";"; indx = 0  }
+
+function total(){
+                for(i =0; i<indx;i++){
+                        printf("%s - %d\n", name[i], time[name[i]])
+                        }
+        }
+
+NR > 1 {
+        if($0 !~ /^$/){ #ignore empty fields
+
+        if (time[$1] < 1) 
+        {
+        time[$1] = $2;
+        name[indx] = $1;
+        indx++; # same as +=1;
+        }
+        else 
+        time[$1] += $2;
+        }
+}
+
+END {
+        total()
+
+        }
+
+```
+Output:
+
+```bash
+test - 200
+job1 - 10
+job2 - 20
+job3 - 40
+jobx - 5
+
+```
+
 
 ---
 
