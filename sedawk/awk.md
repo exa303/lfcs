@@ -1,3 +1,17 @@
+* In awk, you can write two statements in one line separated by ;(semi-colon)
+
+* `{ num_gold++; wt_gold += $2 }`
+
+Otherwize, you should put them into separated lines:
+
+```bash
+{
+    num_gold++
+    wt_gold += $2
+}
+```
+
+
 ## Regula expressions with //
 
 * `awk '/MA/' text2.txt` - matches ewery line that has "MA" in it.
@@ -120,7 +134,7 @@ hand side must be true.
 
 ## Conditional Statements
 
-* `if ( x ~ /[yY](es)?/ ) print x` - whether x matches a pattern using the pattern-matching operator `~`
+* `if ( x ~ /[yY](es)?/ ) print x` - whether x matches a pattern using the pattern-matching operator `~` , `In awk, the format is $target ~ /$regex/, so $1 ~ /[A-Za-z]/.`
     
 * If any action consists of more than one statement, the action is enclosed within a pair of braces.
     ``` bash
@@ -548,12 +562,80 @@ befor e the pattern-action rules. A function is defined using the following synt
 ``` bash
 function name (parameter-list) {
 statements
+
+return
 }
 
 ```
 variables defined in the body of the function are global variables, by
 default.
 
+Example:
 
+```bash
+#!/usr/bin/awk -f
+
+function n(x){
+        print x
+        }
+
+BEGIN{
+    print "AWK Script"
+    n(ARGV[1])
+
+}
+
+```
+```bash
+BEGIN { printf "Enter your name: "
+getline < "-"
+print
+}
+
+#Assign input to a Variable
+
+BEGIN { printf "Enter your name: "
+getline name < "-"
+print name
+}
+
+```
+
+## The system() Function
+The system( ) function executes a command supplied as an expression. * It does
+not, however, make the output of the command available within the program for
+pr ocessing. It retur ns the exit status of the command that was executed. The script
+waits for the command to finish before continuing execution.
+
+
+```bash
+
+BEGIN { if (system("mkdir dale") != 0)
+print "Command Failed" }
+
+
+```
+
+
+## Pipes
+
+This is simple example of awk pipes. Do not forget to close the pipe, becouse you will run out eventualy.
+
+```bash
+#!/usr/bin/awk -f
+
+{
+        "pwd" | getline
+        close(pwd) #importaint
+        print $0 # the value from getline is placed here
+        exit
+
+        }
+
+```
+
+## Pass variable from commandline
+
+* `awk -v var1="$col1" -v var2="$col2" 'BEGIN {print var1,var2 }'`
 
 

@@ -19,7 +19,7 @@ START by klicking on [topics.md](/topics.md)
 ## Additional Notes 
 
 * [Bash Scripting](/bash_scripting.md)
-* [AWK](/awk/)
+* [AWK](/sedawk/awk.md)
 * [SED](/sedawk/sed.md)
 * [REGEX](/regex/regex.md)
 
