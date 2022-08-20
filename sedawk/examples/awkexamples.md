@@ -1,6 +1,6 @@
 # Examples
 
-## 1
+## 1.
 Data: 
 
 ```bash
@@ -26,7 +26,7 @@ NR > 1 {
 
 ```
 
-## 2
+## 2.
 
 Data: 
 
@@ -58,7 +58,7 @@ Kathy earned: 40
 Mark earned: 100
 Mary earned: Nothing
 ```
-## 3 Calculating averages
+## 3. Calculating averages
 
 Data: 
 
@@ -97,7 +97,7 @@ John Grade avg: 5.75
 Joe Grade avg: 4.00
 ```
 
-## 4 Summation algorithm 
+## 4. Summation algorithm 
 
 Data: 
 
@@ -129,7 +129,7 @@ function total(){
         }
 
 NR > 1 {
-        if($0 !~ /^$/){ #ignore empty fields
+        if($0 !~ /^$/){ #ignore empty lines
 
         if (time[$1] < 1) 
         {

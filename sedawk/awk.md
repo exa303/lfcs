@@ -60,6 +60,7 @@ sist of numbers have a numeric value of 0.) Variables do not have to be initiali
 ## System variables
 
 * `NF` - number of fields
+* `FS` - field separator. Recommended to set it at the begining of script `BEGIN { FS = ";"}`
 * `RS` - record separator (by default new line)
 * `NR` - number of rows 
 * `FILENAME` - contains the name of the current input file.
@@ -160,6 +161,16 @@ hand side must be true.
 
     grade = (avg >= 65) ? "Pass" : "Fail"
 
+    # nested
+
+    if ( expression ) {
+        if ( expression )
+            do that
+        else
+            do other
+    }
+
+
     ```
 
 
@@ -259,12 +270,12 @@ To deal with this problem, you have to use the next command as follows:
 awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; next; } $4 > 20 { print $0 ;} ' food_list.txt
 
 No  Item_Name       Price       Quantity
-1   Mangoes         $3.45          5    *
+1   Mangoes         $3.45              5    *
 2   Apples          $2.45              25
 3   Pineapples      $4.45              55
 4   Tomatoes        $3.45              25 
 5   Onions          $1.45              15   *
-6   Bananas                 $3.45              30
+6   Bananas         $3.45              30
 
 ```
 * After a single input line is printed using $4 <= 20 { printf "%s\t%s\n", $0,"*" ; next ; }, the next command included will help skip the second expression $4 > 20 { print $0 ;}, so execution goes to the next input line without having to waste time on checking whether the quantity is greater than 20.
@@ -280,13 +291,14 @@ awk ’{
 exit 5
 }
 END { exit }’
-Her e, the exit status from awk will be 5.
+Here, the exit status from awk will be 5.
 
 ```
 ## Arrays
 
 * `flavor[1] = "cherry"` - syntax.
 * `print flavor[1]` - get the value.
+* `if (arr[$1] < 1)` - check if associative array with index $1 stores any value.
 
 ```bash
 flavor_count = 5
