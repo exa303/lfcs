@@ -315,6 +315,7 @@ print flavor[x]
 for ( item in acro )
 print item, acro[item]
 ```
+* [example](/sedawk/examples/awkexamples.md#7-testing-for-membership-in-an-array)
 
 
 ## Testing for Membership in an Array
