@@ -277,7 +277,6 @@ A-p-p-e-n-d-e-d
 
 ## 7. Testing for Membership in an Array
 
----
 
 Data: 
 
@@ -312,4 +311,92 @@ Output:
 
 ```bash
 Found
+```
+
+## 8. Passing variables from command line
+
+
+**Command**: 
+
+```bash
+./script.awk name="John Connor" data.txt
+```
+Script:
+
+```bash
+#!/usr/bin/awk -f 
+
+{
+        print name
+        }
+
+```
+Output:
+
+```bash
+
+```
+
+
+## 9. Random number generator generator
+
+Command:
+
+```bash
+echo "1" | ./rnd.awk seed=1212
+```
+Script:
+
+```bash
+#!/usr/bin/awk -f
+
+BEGIN {
+        if(seed > 0 ){
+                print "Error: enter seed"
+                exit 1
+                }
+        else
+                srand(seed)
+        }
+        {
+for (i=0;i<10;i++){
+                print int(rand()*(i*seed))
+
+                }
+        }
+
+```
+Output:
+
+```bash
+0
+10
+18
+7
+7
+55
+26
+75
+14
+19
+
+```
+
+---
+
+
+Data:
+
+```bash
+
+```
+Script:
+
+```bash
+
+```
+Output:
+
+```bash
+
 ```
