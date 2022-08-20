@@ -61,7 +61,7 @@ Mary earned: Nothing
 
 
 
-
+---
 
 Data: 
 
