@@ -254,11 +254,11 @@ No      Item_Name               Price           Quantity
  awk '$4 <= 20 { printf "%s\t%s\n", $0,"*" ; } $4 > 20 { print $0 ;} ' food_list.txt 
 
 No  Item_Name       Price       Quantity
-1   Mangoes         $3.45          5    *
+1   Mangoes         $3.45               5    *
 2   Apples          $2.45              25
 3   Pineapples      $4.45              55
 4   Tomatoes        $3.45              25 
-5   Onions          $1.45              15 *
+5   Onions          $1.45              15    *
 6   Bananas         $3.45              30
 ```
 * But there is one problem here, when the first expression is executed, a line that we want to flag is printed using: { printf "%s\t%s\n", $0,"**" ; } and then in the same step, the second expression is also checked which becomes a time wasting factor.
