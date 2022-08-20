@@ -97,7 +97,7 @@ John Grade avg: 5.75
 Joe Grade avg: 4.00
 ```
 
-## Summation algorythm 
+## 4 Summation algorithm 
 
 Data: 
 
@@ -135,7 +135,7 @@ NR > 1 {
         {
         time[$1] = $2;
         name[indx] = $1;
-        indx++; # same as +=1;
+        indx++; # ++ works in awk
         }
         else 
         time[$1] += $2;
