@@ -349,24 +349,17 @@ Script:
 
 ```bash
 #!/usr/bin/awk -f
-
-        {
+ {
         if (length(seed) == 0 ){
                 print "Error missing seed"
                 exit 1
                 }
-
 for (i=0;i<10;i++){
                 print int(rand()*(i*seed))
 
                 }
         }
-
-END {print "s:" length(seed)
-        }
-
-
-
+        
 ```
 Output:
 
