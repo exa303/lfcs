@@ -275,20 +275,41 @@ A-p-p-e-n-d-e-d
 
 ```
 
+## 7. Testing for Membership in an Array
+
 ---
 
 Data: 
 
 ```bash
+Name;Age;
+Jim;22;
+Johny;35;
+Tim;41;
+Diego;44;
+Tony;18;
 
 ```
 Script:
 
 ```bash
+#!/usr/bin/awk -f
+
+BEGIN { FS = ";"}
+
+{ arr[$1] = $2 }
+
+END { if ("Jim" in arr)
+                print "Found"
+        else
+                print "Not found"
+
+        }
+
 
 ```
 Output:
 
 ```bash
-
+Found
 ```
