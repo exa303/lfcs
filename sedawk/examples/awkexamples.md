@@ -210,7 +210,7 @@ Number of rows processed:7
 ```
 
 
-# 6.Append
+## 6.Append(to array)
 
 
 Data: 
