@@ -69,7 +69,7 @@ John;2;4;8;9;
 Joe;1;4;5;6;4;
 ```
 Script:
-* here it is importaint to not that on line 7 and 8 we reset the values back to zero. Becouse other wise it would just keep incrementing with data from new line. Variables ar global in awk.
+* here it is importaint to not that on line 7 and 8 we reset the values back to zero. Otherwise it would just keep incrementing with data from next line. Variables ar global in awk.
 
 ```bash
      1  #!/usr/bin/awk -f
