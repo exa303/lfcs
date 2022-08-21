@@ -222,3 +222,44 @@ Matches       2.	abc	Success
 Matches       3.           abc	Success
 Skips        4.abc
 ```
+
+* `egrep '^Mission: successful' data.txt`
+
+```bash
+Matches	Mission: successful	
+Skips	Last Mission: unsuccessful	
+Skips	Next Mission: successful upon capture of target
+```
+* `egrep 'egrep '.*\.pdf' data.txt`
+
+```bash
+Captures	file_record_transcript.pdf	file_record_transcript	
+Captures	file_07241999.pdf	file_07241999	
+Skips	testfile_fake.pdf.tmp
+```
+
+* `egrep '.{3}\s[0-9]{4}' data.txt`
+
+```bash
+Captures	Jan 1987	
+Captures	May 1969		
+Captures	Aug 2011
+```
+
+* `egrep '[0-9]{4}x[0-9]{3,4}' data.txt`
+
+```bash
+1280x720
+1920x1600
+1024x768
+```
+
+* `egrep 'I\slove\s(cat|dog)s' data.txt`
+
+```bash
+Matches	I love cats	
+Matches	I love dogs	
+Skips	I love logs	
+Skips	I love cogs
+```
+
