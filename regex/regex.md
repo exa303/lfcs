@@ -128,3 +128,13 @@ any character other than the number “1,” followed by a quote.
 ## The vertical bar (|) 
 * `egrep "UNIX|LINUX" ` - matches one or the other or both.
 * `egrep "compan(y|ies)"` - matches company or companies. 
+
+# Examples
+
+* `egrep '^[abc]+' date.txt`
+
+```bash
+abcdefg
+abcde
+abc
+```
