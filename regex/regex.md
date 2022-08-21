@@ -138,3 +138,87 @@ abcdefg
 abcde
 abc
 ```
+* `egrep '123' data.txt ` 
+
+```bash
+abc123xyz
+define "123"
+var g = 123
+```
+* `egrep '\.$' data.txt`
+
+```bash
+cat.
+886.
+?=+.
+```
+
+* `egrep '[^drp]an' data.txt `
+```bash
+can
+fan
+man
+```
+
+* `egrep '[^b]og' data.txt`
+
+```bash
+Match	hog	
+Match	dog	
+Skip	bog
+```
+
+* `egrep '[^abc]{2}' data.txt` , `egrep '[A-Z]'`
+
+```bash
+Match	Ana	
+Match	Bob	
+Match	Cpc	
+Skip	aax	
+Skip	bby	
+Skip	ccz
+```
+
+* `egrep 'z{2,5}' data.txt`
+
+```bash
+Match	wazzzzzup	
+Match	wazzzup	
+Skip	wazup
+```
+
+* `egrep 'aa+b*c+' data.txt` 
+
+```bash
+Match	aaaabcc	
+Match	aabbbbc	
+Match	aacc	
+Skip	a
+```
+
+* `egrep '.*\?$' data.txt` - any number, 0 or more of various characters `(.*)` that ends in question mark `(\?$).` Question mark is a wilcard so it must be ignored/escaped with `\` backslash.  
+
+```bash
+Match	1 file found?	
+Match	2 files found?	
+Match	24 files found?	
+Skip	No files found.
+```
+
+* `egrep '[0-9]{0,2}\sfil(e|es)\sfound\?' data.txt` - any digit possibly followed by another digit followed by space `[0-9]{0,2}\s` followed by file or files and space `fil(e|es)\s` followed by found and question mark `found\?`.
+
+```bash
+Match	1 file found?
+Match	2 files found?
+Match	24 files found?	
+Skip	No files found.
+```
+
+* `egrep '[1-3]\.\s*abc' data.txt`
+
+```bash
+Match       1.   abc	Success
+Match       2.	abc	Success
+Match       3.           abc	Success
+Skip 4.abc
+```
