@@ -233,8 +233,8 @@ Skips	Next Mission: successful upon capture of target
 * `egrep 'egrep '.*\.pdf' data.txt`
 
 ```bash
-Captures	file_record_transcript.pdf	file_record_transcript	
-Captures	file_07241999.pdf	file_07241999	
+Captures	file_record_transcript.pdf	
+Captures	file_07241999.pdf	
 Skips	testfile_fake.pdf.tmp
 ```
 
