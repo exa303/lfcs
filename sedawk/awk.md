@@ -618,7 +618,7 @@ print name
 ## The system() Function
 The system( ) function executes a command supplied as an expression. * It does
 not, however, make the output of the command available within the program for
-pr ocessing. It retur ns the exit status of the command that was executed. The script
+processing. It returns the exit status of the command that was executed. The script
 waits for the command to finish before continuing execution.
 
 
@@ -640,7 +640,7 @@ This is simple example of awk pipes. Do not forget to close the pipe, becouse yo
 
 {
         "pwd" | getline
-        close(pwd) #importaint
+        close(pwd) 
         print $0 # the value from getline is placed here
         exit
 
