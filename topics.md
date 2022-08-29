@@ -41,6 +41,7 @@
 * <s>Start, stop, and check the status of network services</s> [via systemd](/start_stop_network_service.md)
 * <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
 * <s>Synchronize time using other network peers</s> [NTP](/ntp.md)
+* <s>Set time and date</s> [timedatectl](/timedatectl.md)
 ---
 * <s>Configure a caching DNS server</s> [resolved](/dns_caching.md)
 * Maintain a DNS zone **TBA**
