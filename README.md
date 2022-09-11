@@ -17,6 +17,7 @@ START by klicking on [topics.md](/topics.md)
 * [pax](/pax/README.md)
 * [ftp](/ftp/ftp.md)
 * [arp](/arp.md)
+* [route](/route.md) https://www.geeksforgeeks.org/route-command-in-linux-with-examples/ 
 
 ## Additional Notes 
 
