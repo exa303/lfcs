@@ -44,3 +44,7 @@ It is executed like this: cmd result1 result2 … result N.
 * `find . -type f -newer <specific file>` - this will find ewery other file which is newer then specific file
 
 
+
+
+`Magdonalds USER GROUP SIZE eating big MAC ewery min, PERMits me of ranting bad NAMEs about them`  
+

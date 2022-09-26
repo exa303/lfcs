@@ -1,70 +1,70 @@
-* <s>Log into local & remote graphical and text mode consoles</s> 
-* <s>Search for files</s> [Find](/find.md)
-* <s>Evaluate and compare the basic file system features and options [FS](/file_system.md)</s>
-* <s>Compare and manipulate file content</s> [Diff](/diff.md)
-* <s>Use input-output redirection (e.g . >, >>, |, 2>)</s> 
-* Analyze text using basic regular expressions
-* <s>Archive, backup, compress, unpack, and uncompress files)</s> [Here](/compress_backup.md)
-* <s>Create, delete, copy, and move files and directories</s>
-* <s>Create and manage hard and soft links</s>
-* <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
-* <s>Read, and use system documentation</s>
-* <s>Manage access to the root account/specific privileges to users and groups</s> [Here](/root_access.md)
+* 1. Log into local & remote graphical and text mode consoles
+* 2. Search for files [Find](/find.md)
+* 3. Evaluate and compare the basic file system features and options [FS](/file_system.md)
+* 4. Compare and manipulate file content [Diff](/diff.md)
+* 5. Use input-output redirection (e.g . >, >>, |, 2>)
+* 6. Analyze text using basic regular expressions
+* 7. Archive, backup, compress, unpack, and uncompress files) [Here](/compress_backup.md)
+* 8. Create, delete, copy, and move files and directories
+* 9. Create and manage hard and soft links
+* 10. List, set, and change standard file permissions + SUID, SGID, STICKY BIT [Here](/file_perrmissions.md)
+* 11. Read, and use system documentation
+* 12. Manage access to the root account/specific privileges to users and groups [Here](/root_access.md)
 ---
-* <s>Boot, reboot, and shut down a system safely</s>
-* <s>Boot or change system into different operating modes</s> [RUNLEVEL](/run_levels.md) **TBC**
-* Install, configure and troubleshoot bootloaders
-* Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
-* <s>Locate and analyze system log files</s> [Linux](/logging.md), [systemd](/loggd.md) **TBC** 
-* <s>Schedule tasks to run at a set date and time</s> [Cron](/cron.md) 
-* <s>Verify completion of scheduled jobs</s> **"Write a logging utility that tracks events"**
-* Update software to provide required functionality and security
-* Verify the integrity and availability of resources **?**
-* Verify the integrity and availability of key processes **?**
-* <s>Change kernel runtime parameters, persistent and non-persistent</s> [Here](/runtime_parameters.md)
-* <s>**Use scripting to automate system maintenance tasks** </s> [Here](/scripts_for_system_maintenance/)
-* <s>Manage the startup process and services (In Services Configuration)</s> [Here](/systemd.md)
-* List and identify SELinux/AppArmor file and process contexts
-* <s>Identify the component of a Linux distribution that a file belongs to</s> [Here](/identify_which_file_belongs_to.md) **TBC**
-* Systemd - [here](/systemd.md) **TBC**
+* 13. Boot, reboot, and shut down a system safely
+* 14. Boot or change system into different operating modes [RUNLEVEL](/run_levels.md) **TBC**
+* 15. Install, configure and troubleshoot bootloaders
+* 16. Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
+* 17. Locate and analyze system log files [Linux](/logging.md), [systemd](/loggd.md) **TBC** 
+* 18. Schedule tasks to run at a set date and time [Cron](/cron.md) 
+* 19. Verify completion of scheduled jobs **"Write a logging utility that tracks events"**
+* 20. Update software to provide required functionality and security
+* 21. Verify the integrity and availability of resources **?**
+* 22. Verify the integrity and availability of key processes **?**
+* 23. Change kernel runtime parameters, persistent and non-persistent [Here](/runtime_parameters.md)
+* **Use scripting to automate system maintenance tasks**  [Here](/scripts_for_system_maintenance/)
+* 24. Manage the startup process and services (In Services Configuration) [Here](/systemd.md)
+* 25. List and identify SELinux/AppArmor file and process contexts
+* 26. Identify the component of a Linux distribution that a file belongs to [Here](/identify_which_file_belongs_to.md) **TBC**
+* 27. Systemd - [here](/systemd.md) **TBC**
 ---
-* Create, delete, and modify local user accounts [Here](/user_administration.md)
-* <s>Create, delete, and modify local groups and group memberships</s>
-* <s>Manage system-wide environment profiles</s> [Here](/env_profiles.md)
-* <s>Manage template user environment</s> [Read](/template_usr_env.md) **TBC**
-* <s>Configure user resource limits</s> [Here](/usr_resource_limits.md)
-* <s>Manage user privileges</s> **chmod** 
+* 28. Create, delete, and modify local user accounts [Here](/user_administration.md)
+* 29. Create, delete, and modify local groups and group memberships
+* 30. Manage system-wide environment profiles [Here](/env_profiles.md)
+* 31. Manage template user environment [Read](/template_usr_env.md) **TBC**
+* 32. Configure user resource limits [Here](/usr_resource_limits.md)
+* 33. Manage user privileges **chmod** 
 ---
-* Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
-* <s>Configure network services to start automatically at boot</s> [via systemd](/start_stop_network_service.md)
-* <s>Implement packet filtering</s> [Ip tables](/packet_filtering.md)
-* <s>Start, stop, and check the status of network services</s> [via systemd](/start_stop_network_service.md)
-* <s>Statically route IP traffic</s> [ip route](/static_ip_routing.md)
-* <s>Synchronize time using other network peers</s> [NTP](/ntp.md)
-* <s>Set time and date</s> [timedatectl](/timedatectl.md)
+* 34. Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
+* 35. Configure network services to start automatically at boot [via systemd](/start_stop_network_service.md)
+* 36. Implement packet filtering [Ip tables](/packet_filtering.md)
+* 37. Start, stop, and check the status of network services [via systemd](/start_stop_network_service.md)
+* 38. Statically route IP traffic [ip route](/static_ip_routing.md)
+* 39. Synchronize time using other network peers [NTP](/ntp.md)
+* 40. Set time and date [timedatectl](/timedatectl.md)
 ---
-* <s>Configure a caching DNS server</s> [resolved](/dns_caching.md)
-* Maintain a DNS zone **TBA**
-* <s>Configure email aliases</s> [tut](/https://www.walkernews.net/2008/01/16/how-to-setup-email-alias-in-red-hat-linux/)
-* Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
-* Restrict access to the HTTP proxy server **TBA**
-* Configure an IMAP and IMAPS service **TBA**
-* Query and modify the behavior of system services at various operating modes **TBA**
-* Configure an HTTP server **Nginx/Apatche?**
-* Configure HTTP server log files **TBA**
-* Configure a database server **mysql?** **TBA**
-* <s>Restrict access to a web page</s> [iptables]
-* Manage and configure containers **TBA**
-* Manage and configure Virtual Machines **TBA**
+* 41. Configure a caching DNS server [resolved](/dns_caching.md)
+* 42. Maintain a DNS zone **TBA**
+* 43. Configure email aliases [tut](/https://www.walkernews.net/2008/01/16/how-to-setup-email-alias-in-red-hat-linux/)
+* 44. Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
+* 45. Restrict access to the HTTP proxy server **TBA**
+* 46. Configure an IMAP and IMAPS service **TBA**
+* 47. Query and modify the behavior of system services at various operating modes **TBA**
+* 48. Configure an HTTP server **Nginx/Apatche?**
+* 49. Configure HTTP server log files **TBA**
+* 50. Configure a database server **mysql?** **TBA**
+* 51. Restrict access to a web page [iptables]
+* 52. Manage and configure containers **TBA**
+* 53. Manage and configure Virtual Machines **TBA**
 ---
-* <s>List, create, delete, and modify physical storage partitions</s> [fdisk](/command_line_utilities/fdisk.md)
-* Manage and configure LVM storage
-* <s>Create and configure encrypted storage</s> [LUKS](/encrypted_storage.md) [L2](/luks2.md)
-* <s>Configure systems to mount file systems at or during boot</s> **fstab**
-* <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
-* Create and manage RAID devices [Raid](/RAID/raid.md) **SOURCE: www.tecmint.com**
-* Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
-* Create, manage and diagnose advanced file system permissions
-* <s>Setup user and group disk quotas for filesystems</s> [Quota](/quota.md)
-* <s>Create and configure file systems</s> **mkfs fdisk dd**
+* 54. List, create, delete, and modify physical storage partitions [fdisk](/command_line_utilities/fdisk.md)
+* 55. Manage and configure LVM storage
+* 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
+* 57. Configure systems to mount file systems at or during boot **fstab**
+* 58. Configure and manage swap space [swap](/swap.md) **TBA LVM swap space**
+* 59. Create and manage RAID devices [Raid](/RAID/raid.md) **SOURCE: www.tecmint.com**
+* 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
+* 61. Create, manage and diagnose advanced file system permissions
+* 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
+* 63. Create and configure file systems **mkfs fdisk dd**
 ---
