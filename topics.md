@@ -1,13 +1,13 @@
 * 1. Log into local & remote graphical and text mode consoles
 * 2. <s>Search for files [Find](/find.md)</s>
-* 3. Evaluate and compare the basic file system features and options [FS](/file_system.md)
-* 4. Compare and manipulate file content [Diff](/diff.md)
-* 5. Use input-output redirection (e.g . >, >>, |, 2>)
-* 6. Analyze text using basic regular expressions
-* 7. Archive, backup, compress, unpack, and uncompress files) [Here](/compress_backup.md)
-* 8. Create, delete, copy, and move files and directories
-* 9. Create and manage hard and soft links
-* 10. List, set, and change standard file permissions + SUID, SGID, STICKY BIT [Here](/file_perrmissions.md)
+* 3. <s>Evaluate and compare the basic file system features and options</s> [FS](/topics1/fs/fs.md)
+* 4. <s>Compare and manipulate file content</s> [Diff](/topics1/diff.md)
+* 5. <s>Use input-output redirection (e.g . >, >>, |, 2>)</s>
+* 6. <s>Analyze text using basic regular expressions</s>
+* 7. <s>Archive, backup, compress, unpack, and uncompress files)</s> [Here](/topics1/compress/compress_backup.md)
+* 8. <s>Create, delete, copy, and move files and directories</s>
+* 9. <s>Create and manage hard and soft links [Here](/topics1/links.md)</s>
+* 10. <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
 * 11. Read, and use system documentation
 * 12. Manage access to the root account/specific privileges to users and groups [Here](/root_access.md)
 ---
