@@ -1,5 +1,5 @@
 * 1. Log into local & remote graphical and text mode consoles
-* 2. Search for files [Find](/find.md)
+* 2. <s>Search for files [Find](/find.md)</s>
 * 3. Evaluate and compare the basic file system features and options [FS](/file_system.md)
 * 4. Compare and manipulate file content [Diff](/diff.md)
 * 5. Use input-output redirection (e.g . >, >>, |, 2>)
