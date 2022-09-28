@@ -8,7 +8,7 @@
 * 8. <s>Create, delete, copy, and move files and directories</s>
 * 9. <s>Create and manage hard and soft links [Here](/topics1/links.md)</s>
 * 10. <s>List, set, and change standard file permissions + SUID, SGID, STICKY BIT</s> [Here](/file_perrmissions.md)
-* 11. Read, and use system documentation
+* 11. <s>Read, and use system documentation</s>
 * 12. Manage access to the root account/specific privileges to users and groups [Here](/root_access.md)
 ---
 * 13. Boot, reboot, and shut down a system safely
@@ -67,4 +67,5 @@
 * 61. Create, manage and diagnose advanced file system permissions
 * 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
 * 63. Create and configure file systems **mkfs fdisk dd**
+* 64. Inodes [Inodes](/topics1/inode.md)
 ---

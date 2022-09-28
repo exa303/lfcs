@@ -1,6 +1,26 @@
 # File Systems
 
 
+![alt text](/topics1/fs/disk.png)
+
+Sectors - 512 bytes.
+Data Block/Cluster - 1-64 Sectors
+Default size of a data block usualy 4kB.
+1 Data block - boot block, contains information about file system and internal data structure used.
+2 Block - inode block, contains metadata about files, including mapping logical adress to physical adress on a disc.
+3 Block and other from here are actual data blocks.
+
+Important parameters: 
+* Disk size
+* Partition size
+* File size
+
+
+
+
+
+
+
 ## Ext
 
 
@@ -22,17 +42,45 @@ Ext3 is similar to Ext2, but it includes journaling. It was created to be backwa
 ## Ext4
 
 
+Max. volume size	?
+Max. file size	?
+Max. partition size  1EiB
+
+
 Ext4 and Ext3 were created for compatibility reasons. The one has a built–in Ext4 file system, as Ext3, Ext2, and backwards. It was enhanced and involves fresh updates that reduced file fragmentation, made it possible to have larger files and sizes, and has a `delayed allocation`, which is profitable for flash memory duration. It is a basic or default version of the file system on Linux, nowadays. It had lots of updates and work put in it, so it is widely popular.
 
 
 * `Delayed allocation` - skips the allocations for extending writes and completes the allocations in a background thread. With this approach, file System performs a smaller number of large allocations instead of performing a large number of small allocations, which reduces the file system's fragmentation.
 
+
 ## BtrFS
 
+Max. volume size	16 EiB
+Max. file size	16 EiB
+Max. partition size  16EiB
 
-BtrFS usually stands for B–Tree File system, but is pronounced as ‘better’ or ‘butter’ FS. It was created by Oracle. This file system involves `drivepool`, `automatic snapshot`, `transparent compression`, and availability for `online defragmentation`. It was originally created to become an alternative to Ext series; also, it has something in common with the ReiserFS former default file system for Linux. BtrFS is often considered the next and better version of Ext4. We expect BtrFS to become equally popular in both segments of home and business usage, as it is continually developed and now is being tested.
 
-* `transparent compression` - TBA.
+BtrFS usually stands for B–Tree File system, but is pronounced as ‘better’ or ‘butter’ FS. It was created by Oracle. This file system involves `drivepool` - storage pooling, You can create a `subvolume` in your Btrfs filesystem and take `snapshots` of the files/directories in that subvolume. `transparent compression`, and availability for `online defragmentation`. It was originally created to become an alternative to Ext series; also, it has something in common with the ReiserFS former default file system for Linux. BtrFS is often considered the next and better version of Ext4.
+By default, Btrfs uses `copy-on-write` `COW` for all files all the time. 
+The Btrfs filesystem can be resized online (when the filesystem is mounted), but if you want to resize a partition that is added to a Btrfs filesystem, you will have to do it offline (when the filesystem is not mounted).
+
+Features:
+
+* `transparent compression` - ZSTD, ZLIB, LZO 
+* `checksums`
+* `online defragmentation`
+* `drivepool`
+* `automatic snapshot`
+* `COW`
+* `online grow and shrink (resizing)`
+* `Journaling`
+* `Raid 1, 5, 6, 10`
+* `convert ext 2,3,4 to btrfs with btrfs-convert`
+* `64 bits`
+
+[Btrfs](/topics1/fs/btrfs.md)
+
+
 
 
 ## ReiserFS
