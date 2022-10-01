@@ -60,7 +60,7 @@
 * 54. <s>List, create, delete, and modify physical storage partitions [fdisk](/command_line_utilities/fdisk.md)</s>
 * 55. Manage and configure LVM storage
 * 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
-* 57. Configure systems to mount file systems at or during boot **fstab**
+* 57. <s>Configure systems to mount file systems at or during boot [fstab](/topics1/fstab.md)</s>
 * 58. Configure and manage swap space [swap](/swap.md) **TBA LVM swap space**
 * 59. Create and manage RAID devices [Raid](/RAID/raid.md) **SOURCE: www.tecmint.com**
 * 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*

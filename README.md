@@ -18,7 +18,8 @@ START by klicking on [topics.md](/topics.md)
 * [ftp](/ftp/ftp.md)
 * [arp](/arp.md)
 * [route](/route.md) https://www.geeksforgeeks.org/route-command-in-linux-with-examples/ 
-
+* [lsblk](/topics1/lsblk.md)
+* [hexdump](/topics2/hexdump.md)
 ## Additional Notes 
 
 * [Bash Scripting](/bash_scripting.md)
