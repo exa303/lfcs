@@ -45,3 +45,6 @@ multiple mount points supported: `auto,exec,ro` .
 
  
 * `Sixth field – Fsck order` - The sixth field is used to establish the order by which another utility, fsck, should check filesystems on boot. The value of 1 must always be used for the root filesystem; for all the others we can use 2. If this value is not provided it defaults to 0, and the filesystem will not be checked. 
+
+* `/etc/mtab` - is reprisentative state of all mounted files
+
