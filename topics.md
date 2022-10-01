@@ -57,7 +57,7 @@
 * 52. Manage and configure containers **TBA**
 * 53. Manage and configure Virtual Machines **TBA**
 ---
-* 54. List, create, delete, and modify physical storage partitions [fdisk](/command_line_utilities/fdisk.md)
+* 54. <s>List, create, delete, and modify physical storage partitions [fdisk](/command_line_utilities/fdisk.md)</s>
 * 55. Manage and configure LVM storage
 * 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
 * 57. Configure systems to mount file systems at or during boot **fstab**
