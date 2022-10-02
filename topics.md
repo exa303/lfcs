@@ -11,7 +11,7 @@
 * 11. <s>Read, and use system documentation</s>
 * 12. Manage access to the root account/specific privileges to users and groups [Here](/root_access.md)
 ---
-* 13. Boot, reboot, and shut down a system safely
+* 13. <s>Boot, reboot, and shut down a system safely</s>
 * 14. Boot or change system into different operating modes [RUNLEVEL](/run_levels.md) **TBC**
 * 15. Install, configure and troubleshoot bootloaders
 * 16. Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
@@ -58,7 +58,7 @@
 * 53. Manage and configure Virtual Machines **TBA**
 ---
 * 54. <s>List, create, delete, and modify physical storage partitions [fdisk](/command_line_utilities/fdisk.md)</s>
-* 55. *Manage and configure LVM storage
+* 55. <s>Manage and configure LVM storage</s>
 * 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
 * 57. <s>Configure systems to mount file systems at or during boot [fstab](/topics1/fstab.md)</s>
 * 58. <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
