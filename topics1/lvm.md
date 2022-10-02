@@ -18,6 +18,11 @@ Now we can move on to creating logical volumes. It may help to think of our virt
 
 * `lvcreate -L 1000 -n vol02 mynew_vg` - Then, we’ll create another volume named vol02 with a size of 1GB. Again, refer to the diagram above to help visualize the configuration. 
 
+## Extend space
+* `vgextend <volumegroup> <device>`
+* `lvextend -L +2G` - extend space on logical volume
+
+
 
 ## Create a filesystem on logical volumes
 
