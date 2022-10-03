@@ -12,15 +12,13 @@
 * 12. Manage access to the root account/specific privileges to users and groups [Here](/root_access.md)
 ---
 * 13. <s>Boot, reboot, and shut down a system safely</s>
-* 14. * Boot or change system into different operating modes [RUNLEVEL](/run_levels.md) **TBC**
+* 14. <s>Boot or change system into different operating modes [RUNLEVEL](/run_levels.md)</s>
 * 15. Install, configure and troubleshoot bootloaders
 * 16. Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
-* 17. Locate and analyze system log files [Linux](/logging.md), [systemd](/loggd.md) **TBC** 
-* 18. Schedule tasks to run at a set date and time [Cron](/cron.md) 
-* 19. Verify completion of scheduled jobs **"Write a logging utility that tracks events"**
-* 20. Update software to provide required functionality and security
-* 21. Verify the integrity and availability of resources **?**
-* 22. Verify the integrity and availability of key processes **?**
+* 17. Locate and analyze system log files [Linux](/logging.md), <s>[systemd](/loggd.md)</s> 
+* 18. <s>Schedule tasks to run at a set date and time [Cron](/cron.md)</s>
+* 19. <s>Verify completion of scheduled jobs **"Write a logging utility that tracks events"**</s>
+* 22. Verify the integrity and availability of key processes https://en-wiki.ikoula.com/en/A_few_useful_elements_for_a_verification_of_the_integrity_of_its_system_under_Linux
 * 23. Change kernel runtime parameters, persistent and non-persistent [Here](/runtime_parameters.md)
 * **Use scripting to automate system maintenance tasks**  [Here](/scripts_for_system_maintenance/)
 * 24. Manage the startup process and services (In Services Configuration) [Here](/systemd.md)

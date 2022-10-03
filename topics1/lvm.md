@@ -23,7 +23,6 @@ Now we can move on to creating logical volumes. It may help to think of our virt
 * `lvextend -L +2G` - extend space on logical volume
 
 
-
 ## Create a filesystem on logical volumes
 
 * `mkfs.ext4 -m 0 /dev/mynew_vg/vol01` - The -m option specifies the percentage reserved for the super-user, we can set this to 0 to use all the available space (the default is 5%).

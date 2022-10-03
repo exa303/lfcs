@@ -49,6 +49,12 @@ By default, systemd-journald ensures older journal records or journal files are 
 
 * `journalctl -b -1  -p "emerg".."crit"` - by priority or severity. it can be numerical as well. `0 or “emerg”, 1 or “alert”, 2 or “crit”, 3 or “err”, 4 or “warning”, 5 or “notice”, 6 or “info”  7, or “debug”`.
 
+## Systemd module loading time
+`systemd-analyze critical-chain`
+`systemd-analyze blame`
+
+
+`Since i started woking in this Unit all priorities Reversed, Until i left my life was a Vacuum`
 
 
 
