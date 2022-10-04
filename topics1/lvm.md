@@ -20,9 +20,15 @@ Now we can move on to creating logical volumes. It may help to think of our virt
 
 ## Extend space
 * `vgextend <volumegroup> <device>`
-* `lvextend -L +2G` - extend space on logical volume
+* `lvextend -L +2G <path to device>` - extend space on logical volume
 
 
 ## Create a filesystem on logical volumes
 
 * `mkfs.ext4 -m 0 /dev/mynew_vg/vol01` - The -m option specifies the percentage reserved for the super-user, we can set this to 0 to use all the available space (the default is 5%).
+
+
+
+## Errors
+
+if you are creating loop device from a file, you may run in to filtering issue, when trying to create a physical volume. use `wipefs -a /dev/loop<x>` to wipe out symbol table .

@@ -1,3 +1,4 @@
+
 ### Linux System Logs
 Linux has a special directory for storing logs called `/var/log.`
 * `var/log/syslog` and `/var/log/messages` store all global system activity data, including startup messages. Debian-based systems like Ubuntu store this in `/var/log/syslog`, while Red Hat-based systems like RHEL or CentOS use `/var/log/messages`.

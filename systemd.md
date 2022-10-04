@@ -36,3 +36,63 @@ Systemctl is an extremely powerful Linux utility that comes with systemd. It com
 
 * `systemd-analyze` - systemd-analyze can provide valuable information about total time taken by the boot process. 
 * `systemd-analyze blame` - it will give detailed time how long it took for a each service to start. This can be a valuable tool to consider if your server is taking a long time to boot and you’re not sure what the cause is.
+
+
+## Systemd
+
+Systemd made of:
+* systemctl
+* journalctl
+* Init
+* Process managment
+* Network managment (networkD)
+* Login management (loginD)
+* Logs (journalD)
+* etc.
+
+
+SystemD unit - entinty(service,
+                        Socket,
+                        Device,
+                        Mountpoint,
+                        Swap file,
+                        Partition,
+                        Watched filesystem path
+) dependancy, target, requirement managment.
+
+
+
+
+## unit file   example.service:
+```bash
+
+[Unit]
+Description=Antras bandymas
+Wants=network-online.target
+        #After=network-online.target
+		#Network-up.target
+
+[Service]
+Type=simple
+WorkingDirectory=/<path>/
+ExecStart=/<path>/sys.py
+        #Restart=on-failure
+        #RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target
+
+#Uzteme Staiga
+#Uzaugo Sesuo Inesa
+```
+* `systemctl deamon-reload` - use this after unit file was created.
+sudo systemctl list-unit-file --type=service
+systemctl list-dependacies service.service
+* `systemctl mask sendmail.service` - A masked service is one whose unit file is a symlink to /dev/null. This makes it "impossible" to load the service, even if it is required by another, enabled service.
+
+When you mask a service, a symlink is created from /etc/systemd/system to /dev/null, leaving the original unit file elsewhere untouched. When you unmask a service the symlink is deleted.
+
+* `systemctl unmask sendmail`
+* `systemctl edit --full service.service` - edit the service
+
