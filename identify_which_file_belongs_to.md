@@ -7,3 +7,5 @@ Then List files installed to your system from package-name. `dpkg -L python3-min
 
 * `dpkg -i <path/package_name>` - install package 
 * `dpkg -r <path/package_name>` - uninstall package
+
+`selas IR SL600 `

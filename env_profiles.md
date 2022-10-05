@@ -2,9 +2,9 @@
 
 ### Manage system-wide environment profiles
 
-* `export VARIABLE="value"` - set env variable.
+* `export VARIABLE=value` - set env variable.
 * `printenv VARIABLE` - get env variable value.
-* `export EDITOR="vim"` - set default editor to vim.
+* `export EDITOR=vim` - set default editor to vim.
 
 ### Set Persistent Environment Variables on Linux
 
