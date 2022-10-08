@@ -3,16 +3,11 @@
 ---
 * 15. Install, configure and troubleshoot bootloaders https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/
 * 16. Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
-* 22. Verify the integrity and availability of key processes https://en-wiki.ikoula.com/en/A_few_useful_elements_for_a_verification_of_the_integrity_of_its_system_under_Linux
 
-* 27. Systemd - [here](/systemd.md) 
----
 
 
 ---
-* 38. Statically route IP traffic [ip route](/static_ip_routing.md)https://www.ibm.com/support/pages/qradar-how-configure-rsyslog-ubuntu-forward-apache-http-access-logs
-* 39. Synchronize time using other network peers [NTP](/ntp.md)
-* 40. Set time and date [timedatectl](/timedatectl.md)
+---
 * 41. Configure a caching DNS server [resolved](/dns_caching.md)
 ---
 * 42. Maintain a DNS zone **TBA**
@@ -22,7 +17,7 @@
 * 46. Configure an IMAP and IMAPS service **TBA**
 ---
 
-* 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
+
 * 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 ---
 
@@ -33,7 +28,7 @@
 
 
 
-## Completed
+# Completed
 
 * 57. <s>Configure systems to mount file systems at or during boot [fstab](/topics1/fstab.md)</s>
 * 58. <s>Configure and manage swap space [swap](/swap.md)</s> **TBA LVM swap space**
@@ -72,10 +67,14 @@
 * 61. Create, manage and diagnose advanced file system permissions SUID SGID STICKY BIT
 
 * 23. Change kernel runtime parameters, persistent and non-persistent [Here](/runtime_parameters.md) `sysctl -a, sysctl -w, /etc/sysctl.conf`
+* 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
+* 22. Verify the integrity and availability of key processes https://en-wiki.ikoula.com/en/A_few_useful_elements_for_a_verification_of_the_integrity_of_its_system_under_Linux
+* 40. Set time and date [timedatectl](/timedatectl.md)
 
 ## Practical
 
 * 36. Implement packet filtering [Ip tables](/packet_filtering.md)
+* 38. Statically route IP traffic [ip route](/static_ip_routing.md)https://www.ibm.com/support/pages/qradar-how-configure-rsyslog-ubuntu-forward-apache-http-access-logs
 ---
 * 47. Query and modify the behavior of system services at various operating modes **TBA**
 * 48. Configure an HTTP server **Nginx/Apatche?**
@@ -85,6 +84,8 @@
 * **Use scripting to automate system maintenance tasks**  [Here](/scripts_for_system_maintenance/)
 * 33. Manage user privileges **chmod**
 * 50. Configure a database server **mysql?** **TBA** 
+* 39. Synchronize time using other network peers [NTP](/ntp.md)
+* 27. Systemd - [here](/systemd.md) 
 
 
 ## L2

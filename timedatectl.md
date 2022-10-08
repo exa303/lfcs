@@ -17,6 +17,8 @@
 *  set ntp:
     * `timedatectl set-ntp yes`
 
+* `/etc/systemd/timesyncd.conf` - configure NTP server, `NTP=time.cloudflare.com time.google.com time.facebook.com`.
+
 
 
 # Install ntp server manualy
