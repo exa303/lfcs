@@ -3,26 +3,16 @@
 ---
 * 15. Install, configure and troubleshoot bootloaders https://www.tecmint.com/configure-and-troubleshoot-grub-boot-loader-linux/
 * 16. Diagnose and manage processes using: [top](/top.md), [ps](/ps.md), [kill](/kill.md), [nice](/nice.md) [netstat](/netstat.md)**TBC**
-
-
-
 ---
 ---
-* 41. Configure a caching DNS server [resolved](/dns_caching.md)
 ---
 * 42. Maintain a DNS zone **TBA**
 * 43. Configure email aliases [tut](/https://www.walkernews.net/2008/01/16/how-to-setup-email-alias-in-red-hat-linux/)
-* 44. Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
 * 45. Restrict access to the HTTP proxy server **TBA** https://www.youtube.com/watch?v=wNaxYX2QLHk
 * 46. Configure an IMAP and IMAPS service **TBA**
 ---
-
-
 * 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 ---
-
-
-
 * 34. Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
 
 
@@ -72,8 +62,10 @@
 * 40. Set time and date [timedatectl](/timedatectl.md)
 * 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
 * 32. Configure user resource limits [Here](/usr_resource_limits.md) `/etc/security/`
+* 44. Configure SSH servers and clients [sshd](/ssh_config.md) **TBA**
 
 ## Practical
+
 
 * 36. Implement packet filtering [Ip tables](/packet_filtering.md)
 * 38. Statically route IP traffic [ip route](/static_ip_routing.md)https://www.ibm.com/support/pages/qradar-how-configure-rsyslog-ubuntu-forward-apache-http-access-logs
@@ -88,6 +80,7 @@
 * 50. Configure a database server **mysql?** **TBA** 
 * 39. Synchronize time using other network peers [NTP](/ntp.md)
 * 27. Systemd - [here](/systemd.md) 
+* 41. Configure a caching DNS server [resolved](/dns_caching.md)
 
 
 ## L2
