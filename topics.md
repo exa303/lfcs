@@ -11,7 +11,7 @@
 * 45. Restrict access to the HTTP proxy server **TBA** https://www.youtube.com/watch?v=wNaxYX2QLHk
 * 46. Configure an IMAP and IMAPS service **TBA**
 ---
-* 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
+
 ---
 * 34. Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
 
@@ -66,7 +66,7 @@
 
 ## Practical
 
-
+* 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *Continue With NFS*
 * 36. Implement packet filtering [Ip tables](/packet_filtering.md)
 * 38. Statically route IP traffic [ip route](/static_ip_routing.md)https://www.ibm.com/support/pages/qradar-how-configure-rsyslog-ubuntu-forward-apache-http-access-logs
 ---
