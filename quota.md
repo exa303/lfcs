@@ -1,21 +1,44 @@
-
-
-
 # Quota
 
-First you need to install `quota` and `quotatool`. 
+sudo apt update
+sudo apt install quota
+
+## Installing the Quota Kernel Module
+
+* `find /lib/modules/`uname -r` -type f -name '*quota_v*.ko*'` - if you have 2 module your good to go, alternativly install them with:  `sudo apt install linux-image-extra-virtual`.
+
+## Setting up
+* `LABEL=cloudimg-rootfs   /        ext4   usrquota,grpquota        0 0` - managed fs ned to be remounted with `grpquota` and `usrquota` setting on `fstab` with `sudo mount -o remount /`.
+
+
+*  `sudo quotacheck -ugm /` -  This command creates the files `/aquota.user` and `/aquota.group.`. These files contain information about the limits and usage of the filesystem, and they need to exist before we turn on quota monitoring. 
+    * u: specifies that a user-based quota file should be created
+    * g: indicates that a group-based quota file should be created
+    * m: disables remounting the filesystem as read-only while performing the initial tallying of quotas. Remounting the filesystem as read-only will give more accurate        results in case a user is actively saving files during the process, but is not necessary during this initial setup.
+* `sudo quotaon -v /` - turn on.
+
+## Configuring Quotas for a User or group
+* `sudo edquota -u <username>` The -u option specifies that this is a user quota we’ll be editing. If you’d like to edit a group’s quota instead, use the -g option in its place.
+
+## Monitorm, 
+
+* `sudo quota -s <username>` - check quotas for user.
+
+## Generating Quota Reports
+* `sudo repquota -s /` - generate a report
 
 
 Sources:
-
-
 * [askubunut](https://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user)
 * [sourceforge](http://souptonuts.sourceforge.net/quota_tutorial.html)
 
 ---
 
 
-### Alternative
+
+
+
+# Alternative
 
 To restrict hard disk usage per user efficiently we could create a separate partition for each of the `/home` directories. However then it's obviously not so easy to change the granted space or add new users.
 

@@ -21,8 +21,8 @@
 * 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *not mounting on min*
 ---
 
-* 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
-* 32. Configure user resource limits [Here](/usr_resource_limits.md)
+
+
 * 34. Configure networking and hostname resolution statically or dynamically [nmcli](/nmcli.md) **TBC**
 
 
@@ -70,6 +70,8 @@
 * 56. Create and configure encrypted storage [LUKS](/encrypted_storage.md) [L2](/luks2.md)
 * 22. Verify the integrity and availability of key processes https://en-wiki.ikoula.com/en/A_few_useful_elements_for_a_verification_of_the_integrity_of_its_system_under_Linux
 * 40. Set time and date [timedatectl](/timedatectl.md)
+* 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
+* 32. Configure user resource limits [Here](/usr_resource_limits.md) `/etc/security/`
 
 ## Practical
 

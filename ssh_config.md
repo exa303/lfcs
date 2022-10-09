@@ -69,7 +69,7 @@ A dynamic tunnel is similar to a local tunnel in that it allows the local comput
 
 Traffic that is passed to this local port will be sent to the remote host. From there, the SOCKS protocol will be interpreted to establish a connection to the desired end location. This set up allows a SOCKS-capable application to connect to any number of locations through the remote server, without multiple static tunnels.
 
-To establish the connection, we will pass the -D flag along with the local port where we wish to access the tunnel. We will also use the -f flag, which causes SSH to go into the background before executing and the -N flag, which does not open a shell or execute a program on the remote side.
+To establish the connection, we will pass the `-D` flag along with the local port where we wish to access the tunnel. We will also use the `-f` flag, which causes SSH to go into the background before executing and the `-N` flag, which does not open a shell or execute a program on the remote side.
 
 * `ssh -f -N -D 7777 username@remote_host`
 
