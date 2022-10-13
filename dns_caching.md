@@ -111,7 +111,7 @@ The systemd-resolved service will be automatically reloaded on a successful save
 Open a second terminal to the same server and follow the journald log for the systemd-resolved service:
 
 `$ sudo journalctl -f -u systemd-resolved`
-
+    
 A line that begins “Using DNS server” e.g.:
 
 `Using DNS server 1.1.1.1 for transaction 19995.`

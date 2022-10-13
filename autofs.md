@@ -3,7 +3,7 @@
 One drawback of permanent mounting using the `/etc/fstab` configuration is that, regardless of how infrequently a user accesses the mounted file system, the system must dedicate resources to keep the mounted file system in place. This might affect system performance when, for example, the system is maintaining NFS mounts to many systems at one time. 
 
 
-## Mounting file systems on demend on a local machine.
+## Mounting file systems on demend The main autofs configuration file ison a local machine.
 
 * The main autofs configuration file is `/etc/auto.master`. To automatically mount filesystems with autofs, you have to add an entry on the `/etc/auto.master` file.:
 
