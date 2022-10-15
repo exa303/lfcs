@@ -404,6 +404,13 @@ print i, array[i]
 
 ```
 
+
+The split (str, arr, regex) function
+
+The split function splits the str string using a field separator specified using regex and stores it into the arr array. It returns the number of array elements created on splitting the string. If no separator is specified, then the string is split using the current field separator (FS) value.
+
+
+
 * z contains the number of elements in the array.
 
 ```bash

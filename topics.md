@@ -51,47 +51,8 @@
 * 60. Configure systems to mount file systems on demand [autofs](/autofs.md) *Continue With NFS*
 * 61. Create, manage and diagnose advanced file system permissions SUID SGID STICKY BIT
 * 62. Setup user and group disk quotas for filesystems [Quota](/quota.md)
-
-
-
-
-# Completed
-
-
-
-
-
-
-* 63. <s>Create and configure file systems [mkfs](/topics1/mkfs.md)</s>
-* 64. <s>Inodes [Inodes](/topics1/inode.md)</s>
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+* 63. Create and configure file systems [mkfs](/topics1/mkfs.md)
+* 64. Inodes [Inodes](/topics1/inode.md)
 
 
 ## Practical
@@ -108,24 +69,13 @@
 * **Use scripting to automate system maintenance tasks**  [Here](/scripts_for_system_maintenance/)
 
 * 50. Configure a database server **mysql?** **TBA** 
-
- 
-
 * 17. Locate and analyze system log files [Linux](/logging.md), <s>[systemd](/loggd.md)</s>
-
-
 ## L2
-
 * 25. List and identify SELinux/AppArmor file and process contexts
-
-
 
 # CONTINUE
 
-
-
 * 42. Maintain a DNS zone **TBA**
-
 * 45. Restrict access to the HTTP proxy server **TBA** https://www.youtube.com/watch?v=wNaxYX2QLHk
 * 46. Configure an IMAP and IMAPS service **TBA**
 
