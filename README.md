@@ -20,8 +20,10 @@ START by klicking on [topics.md](/topics.md)
 * [route](/route.md) https://www.geeksforgeeks.org/route-command-in-linux-with-examples/  *NET*
 * [lsblk](/topics1/lsblk.md)
 * [hexdump](/topics2/hexdump.md)
-* [makefile](/topics2/make.md
-)
+* [makefile](/topics2/make.md)
+* [lsof](/topics1/lsof.md)
+* [nc](/topics1/netcat.md)
+
 ## Additional Notes 
 
 * [Bash Scripting](/bash_scripting.md)

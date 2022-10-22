@@ -28,6 +28,13 @@ sudo apt install quota
 * `sudo repquota -s /` - generate a report
 
 
+
+* `blockdev --getss` - is for physical sector size and
+* `blockdev --getbsz` - is for logical sector size.
+
+
+
+
 Sources:
 * [askubunut](https://askubuntu.com/questions/33328/how-can-i-limit-disk-space-usage-for-one-user)
 * [sourceforge](http://souptonuts.sourceforge.net/quota_tutorial.html)
