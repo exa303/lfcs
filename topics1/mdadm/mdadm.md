@@ -68,6 +68,8 @@ We can’t remove a disk directly from the array, unless it is failed, so we fir
 
 * `mdadm --detail --scan >> /etc/mdadm/mdadm.conf` - or just append output of a scan command to a file.
 
+* `sudo mdadm --detail --scan | sudo tee -a /etc/mdadm/mdadm.conf` 
+
 
 
 
