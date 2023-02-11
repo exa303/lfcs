@@ -50,7 +50,7 @@ Centralizing your logs makes searching through log data easier and faster, since
 While centralized log management is generally the better option, there are still some risks such as poor net connectivity leading to data loss, or logs using a great deal of network bandwidth. We’ll discuss how to intelligently address these issues in the sections below.
 
 
-### Configure Rsyslog.conf
+<s>## Configure Rsyslog.conf</s>
 
 The main rsyslog configuration file is located at `etc/rsyslog.conf.` You can store additional configuration files in the `/etc/rsyslog.d/` directory. For example, on Ubuntu, this directory contains `/etc/rsyslog.d/50-default.conf`, which instructs rsyslog to write the system logs to file.
 

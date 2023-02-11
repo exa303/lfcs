@@ -69,7 +69,7 @@
 * **Use scripting to automate system maintenance tasks**  [Here](/scripts_for_system_maintenance/)
 
 * 50. Configure a database server **mysql?** **TBA** 
-* 17. Locate and analyze system log files [Linux](/logging.md), <s>[systemd](/loggd.md)</s>
+* 17. Locate and analyze system log files, [Rsyslog](/rsyslog.md) [Bad](/logging.md), [systemd](/loggd.md)
 ## L2
 * 25. List and identify SELinux/AppArmor file and process contexts
 
