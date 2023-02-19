@@ -23,6 +23,12 @@ START by klicking on [topics.md](/topics.md)
 * [makefile](/topics2/make.md)
 * [lsof](/topics1/lsof.md)
 * [nc](/topics1/netcat.md)
+---
+* ip
+* last
+* ss
+* 
+
 
 ## Additional Notes 
 
