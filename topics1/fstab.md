@@ -58,3 +58,7 @@ multiple mount points supported: `auto,exec,ro` .
 
 * `/etc/mtab` - is reprisentative state of all mounted files. or `/proc/mounts`
 
+
+## Commands 
+
+* `mount -t iso9660 -o ro /dev/cdrom /mnt`

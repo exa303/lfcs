@@ -75,3 +75,31 @@ To establish the connection, we will pass the `-D` flag along with the local por
 
 
 
+
+
+## Extension
+
+
+
+Local Port forwarding
+
+ssh creates an additional local port which it will forward to a port on the remote system.
+
+example
+
+ssh -L 8080:127.0.0.1:80 user@webserver
+
+Then in your browser on local use URL http://localhost:8080/
+
+it will connect to local machines port 8080, which ssh will forward on to remote ssh, and it will then make a request to 127.0.0.1:80. Note 127.0.0.1 is actually the remote server's localhost, but it could have been a host/IP available at the remote machine's network.
+
+Remote forward
+
+Asks ssh to create a listening port on the remote machine which it will forward back (Reverse) to the local ssh to forward on.
+
+ssh -R 10123:127.0.0.1:123 user@webserver
+
+So, after ssh connects to webserver, the remote ssh creates and lsitens on a port 10123. A process on webserver connecting to 10123, ssh will pick it up and send it back to the local machine's ssh, which sends it on to 127.0.01:123 port.
+
+
+
