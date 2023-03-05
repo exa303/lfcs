@@ -32,7 +32,7 @@ START by klicking on [topics.md](/topics.md)
 
 ## Additional Notes 
 
-* [Bash Scripting](/bash_scripting.md)
+* [Bash Scripting](/bash_scripting.md) #this us updated @ training_sysadmin repo
 * [AWK](/sedawk/awk.md), [AWK examples](/sedawk/examples/awkexamples.md)
 * [SED](/sedawk/sed.md)
 * [REGEX](/regex/regex.md)
